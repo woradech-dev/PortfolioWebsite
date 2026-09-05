@@ -48,7 +48,7 @@ export const PROJECT_TEMPLATE = {
   demo: "", // ลิงก์ Live Demo หรือเว้นว่าง "" ได้
 };
 
-// 🚀 รายการโปรเจกต์จริงของคุณ (แก้ไข / เพิ่ม / ลบ ได้ตามต้องการ):
+// 🚀 รายการโปรเจกต์จริงของคุณเฉพาะในโฟลเดอร์ "Project":
 export const projectsList = [
   {
     id: "pha-thai-ai",
@@ -131,7 +131,7 @@ export const projectsList = [
     thumbnail: "",
     title: {
       th: "Thamsod (ถามสด): แพลตฟอร์มระบบถาม-ตอบสำหรับงานสัมมนาแบบเรียลไทม์",
-      en: "Thamsod (AskNona): Real-time Interactive Q&A Platform for Seminars",
+      en: "Thamsod: Real-time Interactive Q&A Platform for Seminars",
     },
     tagline: {
       th: "เว็บแอปพลิเคชัน Interactive Q&A แบบเรียลไทม์ผ่าน WebSocket รองรับการถามคำถามแบบไม่ระบุตัวตนและระบบคัดกรองคำถามสำหรับผู้จัดงาน",
@@ -176,31 +176,6 @@ export const projectsList = [
   },
 
   {
-    id: "eventflow",
-    category: "fullstack",
-    thumbnail: "",
-    title: {
-      th: "EventFlow: ระบบบริหารจัดการงานอีเวนต์ คำนวณงบประมาณ และเช็กลิสต์อุปกรณ์",
-      en: "EventFlow: Event Operations Management & Budget Tracking System",
-    },
-    tagline: {
-      th: "เว็บแอปพลิเคชันบริหารจัดการงานอีเวนต์ คำนวณงบประมาณ และติดตามเช็กลิสต์อุปกรณ์แบบครบวงจร",
-      en: "A web management solution for event organizers featuring dynamic budget calculation, checklist workflows, and inventory tracking.",
-    },
-    problem: {
-      th: "การจัดเตรียมงานอีเวนต์มีรายละเอียดและค่าใช้จ่ายปลีกย่อยจำนวนมาก การจัดการงบประมาณและเช็กลิสต์อุปกรณ์ผ่านตารางกระดาษหรือสเปรดชีตทั่วไปมักทำให้เกิดความสับสน ข้อมูลงบประมาณบานปลาย และไม่สามารถตรวจสอบสถานะการเตรียมงานแต่ละส่วนได้แบบเรียลไทม์",
-      en: "Event organizers often struggle with scattered budget tracking, equipment checklist miscommunication, and cost overruns during production.",
-    },
-    solution: {
-      th: "พัฒนา Web Application พร้อมระบบจัดการฐานข้อมูลแบบ Relational Database รองรับบทบาท Admin และ User โดยมีแดชบอร์ดสรุปงบประมาณรวม (Total Budget vs Actual Cost), ระบบเลือก Checklist สิ่งของตามหมวดหมู่อีเวนต์, การคำนวณราคากลางและราคาจริงอัตโนมัติ, และการติดตามสถานะงาน (Planning, On-Going, Completed)",
-      en: "Created an event operations management system equipped with dynamic cost calculators, categorized standard item checklists, budget threshold alerts, and event phase lifecycle tracking.",
-    },
-    tech: ["React", "Node.js", "MySQL", "Tailwind CSS", "REST API"],
-    github: "",
-    demo: "",
-  },
-
-  {
     id: "trash-space",
     category: "other",
     thumbnail: "",
@@ -221,6 +196,31 @@ export const projectsList = [
       en: "Implemented an arcade-style space puzzle game utilizing core computer science data structures including Queues for number buffering, Recursion for projectile trajectories, and dynamic scoring timers.",
     },
     tech: ["JavaScript", "HTML5 Canvas", "Data Structures", "CSS3"],
+    github: "",
+    demo: "",
+  },
+
+  {
+    id: "ref-fashion",
+    category: "fullstack",
+    thumbnail: "",
+    title: {
+      th: "REF: แอปพลิเคชันแนะนำสไตล์การแต่งกายและจับคู่เสื้อผ้าตามสถานการณ์",
+      en: "REF: Fashion Styling Recommendation & Outfit Coordination Platform",
+    },
+    tagline: {
+      th: "แอปพลิเคชันคอมมูนิตี้แฟชั่น แนะนำการแต่งกายให้เข้ากับโอกาสและสถานที่ พร้อมระบบเชื่อมต่อร้านค้าออนไลน์",
+      en: "Fashion styling and wardrobe coordination platform with situational outfit suggestions and integrated shopping links.",
+    },
+    problem: {
+      th: "กลุ่มวัยรุ่นและคนรุ่นใหม่มักประสบปัญหาเลือกเครื่องแต่งกายไม่ถูกเมื่อต้องออกไปในที่สาธารณะ ขาดไอเดียหรือ Reference ในการแต่งตัว ชุดที่แต่งซ้ำๆ ไม่หลากหลาย และไม่ทราบแหล่งซื้อสินค้าเครื่องแต่งกายที่เข้ากับสไตล์ตนเองในงบประมาณที่จำกัด",
+      en: "Young adults frequently face decision fatigue and lack styling references when dressing for different social occasions, resulting in repetitive outfits and difficulty discovering affordable apparel.",
+    },
+    solution: {
+      th: "ออกแบบและพัฒนาต้นแบบ Web/App ด้วยหลักการ Design Thinking และ Responsive Prototype โดยมีฟีเจอร์จัดเก็บตู้เสื้อผ้าของผู้ใช้ (User's Collection), ระบบแนะนำชุดที่เข้ากับเสื้อผ้าที่มีอยู่เดิม, ฟังก์ชันแนะนำการแต่งกายตามโอกาสและสถานที่ (Every Situation), ระบบ Wishlist, และการเชื่อมต่อลิงก์ไปยังหน้าร้านค้าออนไลน์ได้ทันที",
+      en: "Engineered a responsive application prototype featuring personal wardrobe collection management, situational outfit curation algorithms, mix-and-match styling suggestions, and direct retailer checkout links.",
+    },
+    tech: ["JavaScript", "HTML5", "CSS3", "Figma", "Design Thinking", "Responsive Web"],
     github: "",
     demo: "",
   }
