@@ -53,7 +53,7 @@ export const projectsList = [
   {
     id: "pha-thai-ai",
     category: "ai",
-    thumbnail: "",
+    thumbnail: "./projects/pha-thai-ai.png",
     title: {
       th: "PHA-THAI AI: แพลตฟอร์มอนุรักษ์ภูมิปัญญาผ้าไทยด้วยสถาปัตยกรรม RAG",
       en: "PHA-THAI AI: Thai Fabric Cultural Wisdom Preservation via RAG",
@@ -78,7 +78,7 @@ export const projectsList = [
   {
     id: "slipscan-ai",
     category: "automation",
-    thumbnail: "",
+    thumbnail: "./projects/slipscan-ai.png",
     title: {
       th: "SlipScan AI: ระบบบันทึกและจัดการรายจ่ายอัจฉริยะจากสลิปโอนเงินผ่าน LINE",
       en: "SlipScan AI: Frictionless LINE Slip Scanner & Smart Expense Tracker",
@@ -103,7 +103,7 @@ export const projectsList = [
   {
     id: "farmjet",
     category: "fullstack",
-    thumbnail: "",
+    thumbnail: "./projects/farmjet.png",
     title: {
       th: "FarmJet: แพลตฟอร์มตลาดกลางสำหรับ E-Commerce สินค้าและผลผลิตจากฟาร์ม",
       en: "FarmJet: Farm-to-Consumer E-Commerce Marketplace",
@@ -128,7 +128,7 @@ export const projectsList = [
   {
     id: "thamsod-qa",
     category: "fullstack",
-    thumbnail: "",
+    thumbnail: "./projects/thamsod-qa.png",
     title: {
       th: "Thamsod (ถามสด): แพลตฟอร์มระบบถาม-ตอบสำหรับงานสัมมนาแบบเรียลไทม์",
       en: "Thamsod: Real-time Interactive Q&A Platform for Seminars",
@@ -153,7 +153,7 @@ export const projectsList = [
   {
     id: "slide-me",
     category: "fullstack",
-    thumbnail: "",
+    thumbnail: "./projects/slide-me.png",
     title: {
       th: "Slide Me: แอปพลิเคชันบริการเรียกรถสไลด์และช่วยเหลือฉุกเฉินบนท้องถนน",
       en: "Slide Me: On-Demand Roadside Assistance & Slide Car Towing Platform",
@@ -178,7 +178,7 @@ export const projectsList = [
   {
     id: "trash-space",
     category: "other",
-    thumbnail: "",
+    thumbnail: "./projects/trash-space.png",
     title: {
       th: "Trash Space: เกมคณิตศาสตร์ 24 ธีมอวกาศด้วยโครงสร้างข้อมูลขั้นสูง",
       en: "Trash Space: Space-Themed 24 Puzzle Game with Data Structures",
@@ -203,7 +203,7 @@ export const projectsList = [
   {
     id: "ref-fashion",
     category: "fullstack",
-    thumbnail: "",
+    thumbnail: "./projects/ref-fashion.png",
     title: {
       th: "REF: แอปพลิเคชันแนะนำสไตล์การแต่งกายและจับคู่เสื้อผ้าตามสถานการณ์",
       en: "REF: Fashion Styling Recommendation & Outfit Coordination Platform",

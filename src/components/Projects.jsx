@@ -79,6 +79,18 @@ export default function Projects({ data, lang }) {
             >
               {t.filterAi}
             </button>
+            {t.filterOther && (
+              <button
+                onClick={() => setFilter('other')}
+                className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
+                  filter === 'other'
+                    ? 'bg-white dark:bg-slate-800 text-cyan-600 dark:text-cyan-400 shadow-sm'
+                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                }`}
+              >
+                {t.filterOther}
+              </button>
+            )}
           </div>
         </div>
 

@@ -240,6 +240,6 @@ export const portfolioData = {
     github: "https://github.com/woradech-dev",
     facebook: "https://www.facebook.com/MiwWoradech",
     linkedin: "https://www.linkedin.com/in/woradech-ardvichai-b71813430/",
-    resumePdfUrl: "./resume-preview.png",
+    resumePdfUrl: "./resume.html",
   }
 };
