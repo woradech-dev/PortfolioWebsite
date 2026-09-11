@@ -149,8 +149,8 @@ export const projectsList = [
       en: "Architected overall web application and spearheaded the 'Host' role systems for session creation, room control, and moderator controls across frontend and backend.",
     },
     outcome: {
-      th: "โปรเจกต์วิชา CSI400 ได้เรียนรู้และลงมือพัฒนา Full-Stack Application และระบบสื่อสารสองทาง Real-time ด้วย WebSockets เป็นครั้งแรก",
-      en: "CSI400 course project: First-hand experience implementing full-stack reactive architecture and bidirectional WebSocket communication.",
+      th: "โปรเจกต์วิชา CSI400 ได้เรียนรู้และลงมือพัฒนา Full-Stack Application และระบบสื่อสารสองทาง Real-time ด้วย WebSockets เป็นครั้งแรก โดยผลงานมีความพร้อมใช้งานจริงจนได้รับความไว้วางใจให้บริษัท ANONA House ซื้อลิขสิทธิ์ระบบไปต่อยอดใช้งานจริงในชื่อ 'AskEvent'",
+      en: "CSI400 course project: First-hand experience implementing full-stack reactive architecture and bidirectional WebSocket communication, achieving commercial success with ANONA House acquiring the system as their official 'AskEvent' solution.",
     },
     problem: {
       th: "ในการสัมมนาหรือการบรรยายแบบเดิม ผู้เข้าร่วมมักไม่กล้าแสดงความคิดเห็นหรือยกมือถามต่อหน้าสาธารณะ (Public Speaking Anxiety) อีกทั้งผู้จัดงานไม่สามารถคัดกรองและจัดลำดับความสำคัญของคำถามที่ผู้ฟังส่วนใหญ่สนใจได้อย่างมีประสิทธิภาพในเวลาที่จำกัด",

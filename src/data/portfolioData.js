@@ -7,6 +7,7 @@ export const portfolioData = {
       experience: "ประสบการณ์ทำงาน",
       contact: "ติดต่อ",
       resume: "เรซูเม่ (Resume)",
+      cv: "CV (ฉบับเต็ม)",
       role: "นักพัฒนาซอฟต์แวร์",
     },
     hero: {
@@ -150,7 +151,8 @@ export const portfolioData = {
       projects: "Projects",
       experience: "Experience",
       contact: "Contact",
-      resume: "Resume (PDF)",
+      resume: "Resume (1-Page)",
+      cv: "Full CV (3-Page)",
       role: "Software Developer",
     },
     hero: {
@@ -299,5 +301,6 @@ export const portfolioData = {
     facebook: "https://www.facebook.com/MiwWoradech",
     linkedin: "https://www.linkedin.com/in/woradech-dev/",
     resumePdfUrl: "./resume.html",
+    cvPdfUrl: "./cv.html",
   }
 };

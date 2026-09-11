@@ -7,7 +7,7 @@
 
 ## 👨‍💻 เกี่ยวกับผม (Developer Profile)
 
-- **ชื่อ-นามสกุล**: วรเดช อาจวิชัย (ดรอป) / Woradech Ardvichai
+- **ชื่อ-นามสกุล**: วรเดช อาจวิชัย (ด๊อป) / Woradech Ardvichai (Drop)
 - **การศึกษา**: นิสิตชั้นปีที่ 3 สาขาวิทยาการคอมพิวเตอร์ (Computer Science) มหาวิทยาลัยศรีปทุม (SPU)
 - **เกรดเฉลี่ยสะสม**: **GPA 3.88** (เกียรตินิยมอันดับ 1)
 - **ตำแหน่งเป้าหมาย**: **Full-Stack Developer** • **Backend Developer** • **AI & Automation Engineer**

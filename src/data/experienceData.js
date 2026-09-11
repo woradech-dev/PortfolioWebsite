@@ -98,7 +98,7 @@ export const experienceData = {
         client: "Anona-event",
         eventName: "Anona-event Corporate Website (ANONA House)",
         aboutEvent: "บริษัท อโนนา เฮ้าส์ (ANONA House) เป็นทีมงานมืออาชีพผู้ให้บริการจัดงานอีเวนต์และการประชุมสัมมนาครบวงจร ทั้งงานเปิดตัวสินค้า (Grand Opening), การประชุมสัมมนาทางการ, กิจกรรม CSR, การถ่ายทอดสด Live Streaming และระบบลงทะเบียน Smart Check-in",
-        challenge: "สร้างภาพลักษณ์องค์กรที่ทันสมัย น่าเชื่อถือ สะท้อนความเป็นมืออาชีพด้านงานอีเวนต์และเทคโนโลยี พร้อมฟังก์ชันนำเสนอผลงานและระบบถาม-ตอบ AskEvent",
+        challenge: "สร้างภาพลักษณ์องค์กรที่ทันสมัย น่าเชื่อถือ สะท้อนความเป็นมืออาชีพด้านงานอีเวนต์และเทคโนโลยี พร้อมฟังก์ชันนำเสนอผลงานและระบบถาม-ตอบ AskEvent (ซึ่งคือระบบ 'Thamsod' ที่พัฒนาขึ้นแล้วทาง ANONA ได้ขอซื้อลิขสิทธิ์ระบบนำไปต่อยอดใช้งานจริง)",
         description: "ออกแบบและพัฒนาเว็บไซต์อย่างเป็นทางการของบริษัท อโนนา อีเวนต์ พร้อมดูแลรักษาและอัปเดตระบบต่อเนื่องในระยะยาว",
         highlights: [
           "ออกแบบโครงสร้าง Responsive UI/UX โหลดเร็ว รองรับ SEO และการแสดงผลบนทุกอุปกรณ์",
@@ -203,7 +203,7 @@ export const experienceData = {
         client: "Anona-event",
         eventName: "Anona-event Corporate Website (ANONA House)",
         aboutEvent: "ANONA House is a premier full-service event agency and organizer providing turnkey product launch events, formal seminars, CSR programs, live broadcasting, and smart check-in systems.",
-        challenge: "Establishing a sleek, credible corporate web presence highlighting turnkey services and the proprietary AskEvent real-time Q&A system.",
+        challenge: "Establishing a sleek, credible corporate web presence highlighting turnkey services and the proprietary AskEvent real-time Q&A system (commercial acquisition of 'Thamsod' platform acquired by ANONA for live event deployments).",
         description: "Designed and implemented the primary corporate online presence for Anona-event with long-term SLA maintenance.",
         highlights: [
           "Fully responsive UI/UX architecture optimized for SEO and fast loading across all viewports",
