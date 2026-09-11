@@ -11,7 +11,7 @@ export const portfolioData = {
     },
     hero: {
       badge: "🎓 นิสิตวิทยาการคอมพิวเตอร์ ม.ศรีปทุม • GPA 3.88",
-      status: "พร้อมรับโอกาสฝึกงานและร่วมงานทันที",
+      status: "พร้อมรับโอกาสฝึกงานสหกิจศึกษา (เริ่ม ม.ค. 2570) & Full-Stack / Backend Roles",
       headline: "Full-Stack Developer & Automation Enthusiast",
       subheadline: "มุ่งมั่นพัฒนาซอฟต์แวร์ที่ใช้งานได้จริง เชี่ยวชาญทั้งสถาปัตยกรรม Backend, การปรับแต่งฐานข้อมูลให้มีประสิทธิภาพ และการวางระบบ Automation อัตโนมัติเพื่อลดขั้นตอนการทำงาน",
       ctaProjects: "ดูผลงานโปรเจกต์",
@@ -118,7 +118,7 @@ export const portfolioData = {
       softskillsTitle: "ทักษะและการทำงานร่วมกัน",
       softskills: [
         "Problem-Solving Mindset พร้อมแก้ปัญหาอย่างเป็นระบบ",
-        "ทักษะการสื่อสารและภาษาอังกฤษ (Translator 4/5)",
+        "ทักษะภาษาอังกฤษระดับใช้งานทั่วไป (Intermediate Level)",
         "รักการเขียนโค้ดที่สะอาด อ่านง่าย และดูแลรักษาง่าย (Clean & Maintainable Code)",
         "ชอบเรียนรู้และทดลองเทคโนโลยีใหม่ๆ อยู่เสมอ"
       ]
@@ -134,7 +134,7 @@ export const portfolioData = {
       locationLabel: "ที่อยู่ / ที่ตั้ง",
       locationValue: "ดอนเมือง, กรุงเทพมหานคร (Bangkok, Thailand)",
       socialTitle: "โซเชียลมีเดียและโปรไฟล์",
-      availability: "🟢 สถานะ: พร้อมเริ่มงาน / ฝึกงาน",
+      availability: "🟢 สถานะ: พร้อมเริ่มฝึกงานสหกิจศึกษา (มกราคม 2570) / พร้อมร่วมงาน",
     },
     footer: {
       copyright: "© 2026 Woradech Ardvichai (Drop). All rights reserved.",
@@ -155,7 +155,7 @@ export const portfolioData = {
     },
     hero: {
       badge: "🎓 Computer Science @ Sripatum University • GPA 3.88",
-      status: "Available for Internship & Junior Developer Roles",
+      status: "Available for Co-op Internship (Starting Jan 2027) & Junior Roles",
       headline: "Full-Stack Developer & Automation Enthusiast",
       subheadline: "Passionate about engineering reliable software, robust backend architectures, optimized database systems, and end-to-end workflow automation that streamline processes.",
       ctaProjects: "Explore Projects",
@@ -262,7 +262,7 @@ export const portfolioData = {
       softskillsTitle: "Core Competencies & Work Ethic",
       softskills: [
         "First-principles problem-solving mindset",
-        "Strong communication & bilingual fluency (Translator 4/5)",
+        "Intermediate English proficiency for technical documentation & communication",
         "Passion for clean, maintainable, and well-documented code",
         "Relentless drive to experiment with emerging technologies"
       ]
@@ -278,7 +278,7 @@ export const portfolioData = {
       locationLabel: "Location",
       locationValue: "Don Mueang, Bangkok, Thailand",
       socialTitle: "Social & Professional Profiles",
-      availability: "🟢 Status: Ready for Internship / Employment",
+      availability: "🟢 Status: Available for Co-op Internship (Jan 2027) / Employment",
     },
     footer: {
       copyright: "© 2026 Woradech Ardvichai (Drop). All rights reserved.",
@@ -297,7 +297,7 @@ export const portfolioData = {
     gpa: "3.88",
     github: "https://github.com/woradech-dev",
     facebook: "https://www.facebook.com/MiwWoradech",
-    linkedin: "https://www.linkedin.com/in/woradech-ardvichai-b71813430/",
+    linkedin: "https://www.linkedin.com/in/woradech-dev/",
     resumePdfUrl: "./resume.html",
   }
 };

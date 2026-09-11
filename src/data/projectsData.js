@@ -124,10 +124,10 @@ export const projectsList = [
       th: "Web Demo (Cloudflare Pages)",
       en: "Web Demo (Cloudflare Pages)",
     },
-    slideLink: "https://www.canva.com/design/DAHAi238vPc/MqawMepNJK5oScQh0DS-pw/view?utm_content=DAHAi238vPc&utm_campaign=designshare&utm_medium=link&utm_source=viewer",
+    slideLink: "https://canva.link/gayzmz6xupe283r",
     slideLabel: {
-      th: "สไลด์นำเสนอผลงาน (Canva)",
-      en: "Presentation Slides (Canva)",
+      th: "สไลด์นำเสนอ (Canva)",
+      en: "Slide Presentation (Canva)",
     },
   },
 
@@ -166,6 +166,11 @@ export const projectsList = [
     demoLabel: {
       th: "ทดลองใช้งาน (Live Demo)",
       en: "Launch Live Demo",
+    },
+    slideLink: "https://canva.link/t752z7d3mtqvueo",
+    slideLabel: {
+      th: "สไลด์นำเสนอ (Canva)",
+      en: "Slide Presentation (Canva)",
     },
   },
 
@@ -244,6 +249,11 @@ export const projectsList = [
       th: "Demo ฝั่งคนขับ (Driver App)",
       en: "Driver App Demo",
     },
+    slideLink: "https://canva.link/y7bmot03qfmy89b",
+    slideLabel: {
+      th: "สไลด์นำเสนอ (Canva)",
+      en: "Slide Presentation (Canva)",
+    },
   },
 
   {
@@ -281,6 +291,11 @@ export const projectsList = [
     demoLabel: {
       th: "ทดลองเล่นเกม (Live Game Demo)",
       en: "Play Live Game Demo",
+    },
+    slideLink: "https://canva.link/kvgam2zsdww8sp3",
+    slideLabel: {
+      th: "สไลด์นำเสนอ (Canva)",
+      en: "Slide Presentation (Canva)",
     },
   },
 ];

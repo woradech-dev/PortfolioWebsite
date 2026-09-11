@@ -9,7 +9,8 @@ import {
   Presentation, 
   Smartphone, 
   Star,
-  Layers
+  Layers,
+  FileText
 } from 'lucide-react';
 import { projectsList } from '../data/projectsData';
 
@@ -224,6 +225,18 @@ export default function Projects({ data, lang }) {
                       >
                         <Smartphone className="w-4 h-4" />
                         <span>{resolveText(featuredProject.demoLabel) || t.demoButton}</span>
+                        <ExternalLink className="w-3.5 h-3.5" />
+                      </a>
+                    )}
+                    {featuredProject.pdfLink && (
+                      <a
+                        href={featuredProject.pdfLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-slate-900 dark:bg-white text-white dark:text-slate-900 hover:bg-slate-800 dark:hover:bg-slate-100 shadow-lg transition-all hover:scale-[1.02]"
+                      >
+                        <FileText className="w-4 h-4 text-cyan-400 dark:text-cyan-600" />
+                        <span>{lang === 'en' ? 'View Slide Presentation (PDF)' : 'ดูสไลด์นำเสนอ (PDF 13 หน้า)'}</span>
                         <ExternalLink className="w-3.5 h-3.5" />
                       </a>
                     )}

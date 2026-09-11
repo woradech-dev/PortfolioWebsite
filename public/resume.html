@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume - Woradech Ardvichai (Software Engineer)</title>
+  <title>Resume - Woradech Ardvichai (Software Engineer & Full-Stack Developer)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -38,6 +38,7 @@
         width: 100% !important;
         min-height: 297mm !important;
         height: 297mm !important;
+        padding: 24px 26px !important;
       }
     }
     .page-container {
@@ -47,258 +48,350 @@
     }
   </style>
 </head>
-<body class="bg-slate-200 py-8 text-slate-800 font-sans antialiased flex flex-col items-center min-h-screen">
+<body class="bg-slate-200 py-6 text-slate-800 font-sans antialiased flex flex-col items-center min-h-screen">
 
   <!-- Control Bar (No Print) -->
-  <div class="no-print mb-6 flex items-center gap-4 bg-white/90 backdrop-blur px-6 py-3 rounded-2xl shadow-lg border border-slate-300">
+  <div class="no-print mb-4 flex items-center gap-3 bg-white/95 backdrop-blur px-5 py-2.5 rounded-2xl shadow-lg border border-slate-300">
     <div class="flex items-center gap-2">
-      <span class="w-3 h-3 rounded-full bg-emerald-500 animate-pulse"></span>
+      <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
       <span class="text-xs font-semibold text-slate-700">A4 Print-Ready (100% Scale)</span>
     </div>
     <div class="h-4 w-[1px] bg-slate-200"></div>
-    <button onclick="window.print()" class="px-5 py-2 bg-cyan-600 hover:bg-cyan-700 text-white text-sm font-semibold rounded-xl shadow-md transition flex items-center gap-2 cursor-pointer">
-      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+    <button onclick="window.print()" class="px-4 py-1.5 bg-cyan-600 hover:bg-cyan-700 text-white text-xs font-semibold rounded-xl shadow-md transition flex items-center gap-1.5 cursor-pointer">
+      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
       พิมพ์หรือบันทึกเป็น PDF (Print PDF)
     </button>
-    <a href="./index.html" class="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-sm font-semibold rounded-xl transition">
+    <a href="./index.html" class="px-3.5 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-xl transition">
       กลับหน้า Portfolio
     </a>
   </div>
 
   <!-- A4 Page Container -->
-  <div id="resume-page" class="page-container bg-white shadow-2xl overflow-hidden flex flex-col justify-between p-9 box-border">
+  <div id="resume-page" class="page-container bg-white shadow-2xl overflow-hidden flex flex-col justify-between p-7 sm:p-8 box-border">
 
     <div>
       <!-- HEADER -->
-      <header class="flex items-center justify-between gap-6 pb-6 border-b border-slate-200">
+      <header class="flex items-center justify-between gap-5 pb-3.5 border-b border-slate-200">
         <div class="flex-1">
-          <div class="flex items-center gap-3">
-            <h1 class="text-3xl font-extrabold tracking-tight text-slate-900">Woradech Ardvichai</h1>
-            <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-cyan-100 text-cyan-800">Drop</span>
+          <div class="flex items-center gap-2.5">
+            <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900">Woradech Ardvichai</h1>
+            <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-cyan-100 text-cyan-800">Drop</span>
           </div>
-          <p class="text-sm font-bold text-cyan-600 tracking-wide uppercase mt-1">
-            Software Engineer &amp; Full-Stack Developer
+          <p class="text-xs sm:text-sm font-bold text-cyan-600 tracking-wide uppercase mt-0.5">
+            Full-Stack Developer • Backend Developer • AI &amp; Automation Engineer
           </p>
-          <p class="text-xs text-slate-500 mt-2 leading-relaxed max-w-xl">
-            นักศึกษาพัฒนาซอฟต์แวร์ คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยศรีปทุม (GPA 3.88) มีความเชี่ยวชาญด้าน Full-Stack Web Development, Serverless Automation (n8n), สถาปัตยกรรม RAG และ AI Integration มุ่งมั่นสร้างสรรค์ระบบที่เสถียร สเกลได้ และตอบโจทย์ธุรกิจจริง
+          <p class="text-[10.5px] text-slate-600 mt-1 leading-relaxed max-w-xl">
+            นิสิตวิทยาการคอมพิวเตอร์ ม.ศรีปทุม (GPA 3.88 เกียรตินิยมอันดับ 1) มีประสบการณ์พัฒนาระบบจริงระดับ Production ให้กับองค์กรระดับชาติและงานอีเวนต์ (ศจย./สสส./รามาธิบดี, กฟผ.) เชี่ยวชาญสถาปัตยกรรม Full-Stack (PHP, Node.js, React, C#, FastAPI), Serverless Automation (n8n, LINE Webhook), และระบบ Real-time WebSockets
           </p>
         </div>
 
-        <!-- Cutout Photo with modern subtle ring -->
-        <div class="relative w-28 h-28 flex-shrink-0 rounded-2xl overflow-hidden bg-gradient-to-br from-cyan-50 to-slate-100 p-1 border-2 border-cyan-500/30 shadow-inner">
+        <!-- Photo -->
+        <div class="relative w-24 h-24 flex-shrink-0 rounded-2xl overflow-hidden bg-gradient-to-br from-cyan-50 to-slate-100 p-1 border-2 border-cyan-500/30 shadow-sm">
           <img src="./profile-cutout.png" alt="Woradech Ardvichai" class="w-full h-full object-cover object-top rounded-xl">
         </div>
       </header>
 
-      <!-- CONTACT BAR -->
-      <div class="grid grid-cols-4 gap-2 py-3 border-b border-slate-100 text-[11px] text-slate-600 bg-slate-50/60 -mx-9 px-9">
-        <div class="flex items-center gap-1.5">
-          <svg class="w-3.5 h-3.5 text-cyan-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+      <!-- CONTACT BAR (Flex Wrap with Explicit Gap - No text overflow / cut-off in Print) -->
+      <div class="flex flex-wrap items-center justify-between gap-y-1 gap-x-3 py-2 border-b border-slate-100 text-[10px] text-slate-700 bg-slate-50/90 -mx-8 px-8">
+        <div class="flex items-center gap-1.5 whitespace-nowrap">
+          <svg class="w-3.5 h-3.5 text-cyan-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
           <span class="font-medium">061-813-8787</span>
         </div>
-        <div class="flex items-center gap-1.5">
-          <svg class="w-3.5 h-3.5 text-cyan-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-          <span class="font-medium truncate">woradech.ard115@gmail.com</span>
+        <div class="flex items-center gap-1.5 whitespace-nowrap">
+          <svg class="w-3.5 h-3.5 text-cyan-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+          <a href="mailto:woradech.ard115@gmail.com" class="font-medium hover:text-cyan-600">woradech.ard115@gmail.com</a>
         </div>
-        <div class="flex items-center gap-1.5">
-          <svg class="w-3.5 h-3.5 text-cyan-600 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-          <span class="font-medium">github.com/woradech-dev</span>
+        <div class="flex items-center gap-1.5 whitespace-nowrap">
+          <svg class="w-3.5 h-3.5 text-cyan-600 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          <a href="https://www.facebook.com/MiwWoradech" target="_blank" class="font-medium hover:text-cyan-600">fb.com/MiwWoradech</a>
         </div>
-        <div class="flex items-center gap-1.5">
-          <svg class="w-3.5 h-3.5 text-cyan-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-          <span class="font-medium">Don Mueang, Bangkok</span>
+        <div class="flex items-center gap-1.5 whitespace-nowrap">
+          <svg class="w-3.5 h-3.5 text-cyan-600 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <a href="https://github.com/woradech-dev" target="_blank" class="font-medium hover:text-cyan-600">github.com/woradech-dev</a>
+        </div>
+        <div class="flex items-center gap-1.5 whitespace-nowrap">
+          <svg class="w-3.5 h-3.5 text-cyan-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+          <span class="font-medium">ดอนเมือง, กทม.</span>
         </div>
       </div>
 
       <!-- MAIN CONTENT: 2 COLUMNS -->
-      <div class="grid grid-cols-12 gap-6 mt-5">
+      <div class="grid grid-cols-12 gap-5 mt-3">
 
-        <!-- LEFT COLUMN (4 Cols): Education & Skills -->
-        <div class="col-span-4 space-y-5 border-r border-slate-200 pr-5">
+        <!-- LEFT COLUMN (4 Cols): Education, Target, Skills, Languages -->
+        <div class="col-span-4 space-y-3 border-r border-slate-200 pr-4">
           
+          <!-- TARGET & STATUS (Cleaned up, no awkward line-wrapping) -->
+          <div class="bg-gradient-to-br from-cyan-50 to-indigo-50/50 p-2.5 rounded-xl border border-cyan-200/80">
+            <div class="text-[9.5px] font-bold text-cyan-800 uppercase tracking-wider flex items-center gap-1">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              Career Objective
+            </div>
+            <div class="text-[10.5px] font-bold text-slate-900 mt-1 leading-snug">
+              เปิดรับฝึกงานสหกิจศึกษา (Co-op)
+            </div>
+            <div class="text-[9.5px] text-slate-700 mt-1 font-medium">
+              📅 พร้อมเริ่มงาน: <span class="font-bold text-cyan-700">มกราคม 2570</span>
+            </div>
+            <div class="text-[9px] text-slate-500 mt-0.5">
+              ตำแหน่ง: Full-Stack / Backend / Automation
+            </div>
+          </div>
+
           <!-- EDUCATION -->
           <div>
-            <h2 class="text-xs font-extrabold uppercase tracking-wider text-cyan-700 flex items-center gap-1.5 mb-2.5">
+            <h2 class="text-[11px] font-extrabold uppercase tracking-wider text-cyan-700 flex items-center gap-1.5 mb-1.5">
               <span class="w-1.5 h-1.5 rounded-full bg-cyan-600"></span>
               Education
             </h2>
-            <div class="bg-slate-50 p-3 rounded-xl border border-slate-200/80">
-              <div class="font-bold text-xs text-slate-900">Sripatum University</div>
-              <div class="text-[11px] text-slate-600 mt-0.5">คณะเทคโนโลยีสารสนเทศ</div>
-              <div class="text-[10px] text-slate-500 leading-tight mt-0.5">วิทยาการคอมพิวเตอร์และนวัตกรรมพัฒนาซอฟต์แวร์</div>
-              <div class="mt-2 inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-emerald-50 text-emerald-700 border border-emerald-200 text-[11px] font-bold">
+            <div class="bg-slate-50 p-2.5 rounded-xl border border-slate-200/80">
+              <div class="font-bold text-[11px] text-slate-900">มหาวิทยาลัยศรีปทุม (SPU)</div>
+              <div class="text-[10px] text-slate-600 mt-0.5">คณะเทคโนโลยีสารสนเทศ</div>
+              <div class="text-[9px] text-slate-500 leading-tight mt-0.5">วิทยาการคอมพิวเตอร์และนวัตกรรมซอฟต์แวร์ (ปี 3)</div>
+              <div class="mt-1.5 inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-emerald-50 text-emerald-700 border border-emerald-200 text-[10px] font-bold">
                 GPA: 3.88 (เกียรตินิยมอันดับ 1)
               </div>
             </div>
           </div>
 
-          <!-- TECHNICAL SKILLS -->
+          <!-- TECHNICAL STACK (Full Production Stack including PHP) -->
           <div>
-            <h2 class="text-xs font-extrabold uppercase tracking-wider text-cyan-700 flex items-center gap-1.5 mb-2.5">
+            <h2 class="text-[11px] font-extrabold uppercase tracking-wider text-cyan-700 flex items-center gap-1.5 mb-1.5">
               <span class="w-1.5 h-1.5 rounded-full bg-cyan-600"></span>
               Technical Stack
             </h2>
 
-            <div class="space-y-3 text-[11px]">
+            <div class="space-y-2 text-[10px]">
               <div>
-                <span class="font-semibold text-slate-500 text-[10px] uppercase tracking-wider block mb-1">Languages</span>
+                <span class="font-semibold text-slate-500 text-[9px] uppercase tracking-wider block mb-0.5">Languages &amp; Core</span>
                 <div class="flex flex-wrap gap-1">
-                  <span class="px-2 py-0.5 bg-slate-100 text-slate-800 rounded font-medium text-[10px]">JavaScript (ES6+)</span>
-                  <span class="px-2 py-0.5 bg-slate-100 text-slate-800 rounded font-medium text-[10px]">Python</span>
-                  <span class="px-2 py-0.5 bg-slate-100 text-slate-800 rounded font-medium text-[10px]">C#</span>
-                  <span class="px-2 py-0.5 bg-slate-100 text-slate-800 rounded font-medium text-[10px]">PHP</span>
-                  <span class="px-2 py-0.5 bg-slate-100 text-slate-800 rounded font-medium text-[10px]">SQL</span>
+                  <span class="px-1.5 py-0.5 bg-slate-100 text-slate-800 rounded font-medium text-[9px]">PHP</span>
+                  <span class="px-1.5 py-0.5 bg-slate-100 text-slate-800 rounded font-medium text-[9px]">JavaScript (ES6+)</span>
+                  <span class="px-1.5 py-0.5 bg-slate-100 text-slate-800 rounded font-medium text-[9px]">Python</span>
+                  <span class="px-1.5 py-0.5 bg-slate-100 text-slate-800 rounded font-medium text-[9px]">C# (.NET)</span>
+                  <span class="px-1.5 py-0.5 bg-slate-100 text-slate-800 rounded font-medium text-[9px]">SQL</span>
                 </div>
               </div>
 
               <div>
-                <span class="font-semibold text-slate-500 text-[10px] uppercase tracking-wider block mb-1">Frontend &amp; UI</span>
+                <span class="font-semibold text-slate-500 text-[9px] uppercase tracking-wider block mb-0.5">Web &amp; Backend Frameworks</span>
                 <div class="flex flex-wrap gap-1">
-                  <span class="px-2 py-0.5 bg-cyan-50 text-cyan-800 border border-cyan-200/60 rounded font-medium text-[10px]">React</span>
-                  <span class="px-2 py-0.5 bg-cyan-50 text-cyan-800 border border-cyan-200/60 rounded font-medium text-[10px]">Tailwind CSS</span>
-                  <span class="px-2 py-0.5 bg-cyan-50 text-cyan-800 border border-cyan-200/60 rounded font-medium text-[10px]">Vite</span>
-                  <span class="px-2 py-0.5 bg-cyan-50 text-cyan-800 border border-cyan-200/60 rounded font-medium text-[10px]">HTML5/CSS3</span>
+                  <span class="px-1.5 py-0.5 bg-cyan-50 text-cyan-800 border border-cyan-200/60 rounded font-medium text-[9px]">React</span>
+                  <span class="px-1.5 py-0.5 bg-cyan-50 text-cyan-800 border border-cyan-200/60 rounded font-medium text-[9px]">Node.js (Express)</span>
+                  <span class="px-1.5 py-0.5 bg-cyan-50 text-cyan-800 border border-cyan-200/60 rounded font-medium text-[9px]">Tailwind CSS</span>
+                  <span class="px-1.5 py-0.5 bg-slate-100 text-slate-800 rounded font-medium text-[9px]">FastAPI</span>
+                  <span class="px-1.5 py-0.5 bg-slate-100 text-slate-800 rounded font-medium text-[9px]">ASP.NET Core</span>
+                  <span class="px-1.5 py-0.5 bg-slate-100 text-slate-800 rounded font-medium text-[9px]">Socket.io</span>
                 </div>
               </div>
 
               <div>
-                <span class="font-semibold text-slate-500 text-[10px] uppercase tracking-wider block mb-1">Backend &amp; Database</span>
+                <span class="font-semibold text-slate-500 text-[9px] uppercase tracking-wider block mb-0.5">Automation &amp; AI</span>
                 <div class="flex flex-wrap gap-1">
-                  <span class="px-2 py-0.5 bg-slate-100 text-slate-800 rounded font-medium text-[10px]">Node.js (Express)</span>
-                  <span class="px-2 py-0.5 bg-slate-100 text-slate-800 rounded font-medium text-[10px]">ASP.NET Core</span>
-                  <span class="px-2 py-0.5 bg-slate-100 text-slate-800 rounded font-medium text-[10px]">RESTful API</span>
-                  <span class="px-2 py-0.5 bg-slate-100 text-slate-800 rounded font-medium text-[10px]">MySQL</span>
-                  <span class="px-2 py-0.5 bg-slate-100 text-slate-800 rounded font-medium text-[10px]">MongoDB</span>
+                  <span class="px-1.5 py-0.5 bg-indigo-50 text-indigo-800 border border-indigo-200/60 rounded font-medium text-[9px]">n8n Workflow</span>
+                  <span class="px-1.5 py-0.5 bg-indigo-50 text-indigo-800 border border-indigo-200/60 rounded font-medium text-[9px]">LINE OA &amp; LIFF</span>
+                  <span class="px-1.5 py-0.5 bg-indigo-50 text-indigo-800 border border-indigo-200/60 rounded font-medium text-[9px]">RAG Pipeline</span>
+                  <span class="px-1.5 py-0.5 bg-indigo-50 text-indigo-800 border border-indigo-200/60 rounded font-medium text-[9px]">Gemini AI</span>
+                  <span class="px-1.5 py-0.5 bg-indigo-50 text-indigo-800 border border-indigo-200/60 rounded font-medium text-[9px]">OCR API</span>
                 </div>
               </div>
 
               <div>
-                <span class="font-semibold text-slate-500 text-[10px] uppercase tracking-wider block mb-1">AI &amp; Automation</span>
+                <span class="font-semibold text-slate-500 text-[9px] uppercase tracking-wider block mb-0.5">Databases &amp; DevOps Tools</span>
                 <div class="flex flex-wrap gap-1">
-                  <span class="px-2 py-0.5 bg-indigo-50 text-indigo-800 border border-indigo-200/60 rounded font-medium text-[10px]">RAG Pipeline</span>
-                  <span class="px-2 py-0.5 bg-indigo-50 text-indigo-800 border border-indigo-200/60 rounded font-medium text-[10px]">n8n Automation</span>
-                  <span class="px-2 py-0.5 bg-indigo-50 text-indigo-800 border border-indigo-200/60 rounded font-medium text-[10px]">PyThaiNLP</span>
-                  <span class="px-2 py-0.5 bg-indigo-50 text-indigo-800 border border-indigo-200/60 rounded font-medium text-[10px]">Gemini AI</span>
-                </div>
-              </div>
-
-              <div>
-                <span class="font-semibold text-slate-500 text-[10px] uppercase tracking-wider block mb-1">Dev Tools</span>
-                <div class="flex flex-wrap gap-1">
-                  <span class="px-2 py-0.5 bg-slate-100 text-slate-700 rounded text-[9.5px]">Git / GitHub</span>
-                  <span class="px-2 py-0.5 bg-slate-100 text-slate-700 rounded text-[9.5px]">Socket.io</span>
-                  <span class="px-2 py-0.5 bg-slate-100 text-slate-700 rounded text-[9.5px]">Postman</span>
-                  <span class="px-2 py-0.5 bg-slate-100 text-slate-700 rounded text-[9.5px]">JWT</span>
-                  <span class="px-2 py-0.5 bg-slate-100 text-slate-700 rounded text-[9.5px]">Figma</span>
+                  <span class="px-1.5 py-0.5 bg-slate-100 text-slate-700 rounded text-[9px]">MySQL</span>
+                  <span class="px-1.5 py-0.5 bg-slate-100 text-slate-700 rounded text-[9px]">MongoDB</span>
+                  <span class="px-1.5 py-0.5 bg-slate-100 text-slate-700 rounded text-[9px]">Git / GitHub</span>
+                  <span class="px-1.5 py-0.5 bg-slate-100 text-slate-700 rounded text-[9px]">Postman</span>
+                  <span class="px-1.5 py-0.5 bg-slate-100 text-slate-700 rounded text-[9px]">Figma</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- MOTTO -->
-          <div class="pt-2 border-t border-slate-100">
-            <span class="text-[10px] uppercase font-bold text-slate-400 tracking-wider block mb-1">Motto</span>
-            <p class="text-[10px] italic text-slate-600 leading-relaxed bg-slate-50 p-2.5 rounded-lg border-l-2 border-cyan-500">
-              "If you're tired, just take a break. Because just 'take a break' doesn't mean you 'giving up' on it, once you're healed you can always keep moving forward."
-            </p>
+          <!-- LANGUAGES (ทักษะทางภาษาตามที่แนะนำ) -->
+          <div>
+            <h2 class="text-[11px] font-extrabold uppercase tracking-wider text-cyan-700 flex items-center gap-1.5 mb-1.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-cyan-600"></span>
+              Languages
+            </h2>
+            <div class="space-y-1.5 text-[9.5px]">
+              <div class="flex items-center justify-between bg-slate-50 px-2 py-1 rounded-lg border border-slate-100">
+                <span class="font-semibold text-slate-800">🇹🇭 ภาษาไทย (Thai)</span>
+                <span class="text-cyan-700 font-bold text-[9px]">Native (เจ้าของภาษา)</span>
+              </div>
+              <div class="flex items-center justify-between bg-slate-50 px-2 py-1 rounded-lg border border-slate-100">
+                <span class="font-semibold text-slate-800">🇺🇸 ภาษาอังกฤษ (English)</span>
+                <span class="text-slate-600 font-medium text-[9px]">Intermediate (ใช้งานทั่วไป)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CORE STRENGTHS -->
+          <div>
+            <h2 class="text-[11px] font-extrabold uppercase tracking-wider text-cyan-700 flex items-center gap-1.5 mb-1.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-cyan-600"></span>
+              Core Strengths
+            </h2>
+            <ul class="space-y-1 text-[9px] text-slate-600 leading-snug">
+              <li class="flex items-start gap-1">
+                <span class="text-cyan-600 font-bold">&bull;</span>
+                <span><strong>Fast Learner:</strong> เรียนรู้เทคโนโลยีและเครื่องมือใหม่ได้อย่างรวดเร็ว</span>
+              </li>
+              <li class="flex items-start gap-1">
+                <span class="text-cyan-600 font-bold">&bull;</span>
+                <span><strong>Problem Solver:</strong> รับมือและแก้ปัญหาเฉพาะหน้าในระบบ Production ได้ดี</span>
+              </li>
+              <li class="flex items-start gap-1">
+                <span class="text-cyan-600 font-bold">&bull;</span>
+                <span><strong>Clean Code:</strong> เขียนโค้ดเป็นระเบียบ คำนึงถึงการขยายและบำรุงรักษาง่าย</span>
+              </li>
+            </ul>
           </div>
 
         </div>
 
-        <!-- RIGHT COLUMN (8 Cols): Featured Projects & Experience -->
-        <div class="col-span-8 space-y-3.5">
+        <!-- RIGHT COLUMN (8 Cols): Experience (Real-World) + Key Projects -->
+        <div class="col-span-8 space-y-3">
           
+          <!-- 1. REAL-WORLD PRODUCTION EXPERIENCE (หมวดประสบการณ์จริง) -->
           <div>
-            <h2 class="text-xs font-extrabold uppercase tracking-wider text-cyan-700 flex items-center justify-between mb-2.5">
+            <h2 class="text-[11.5px] font-extrabold uppercase tracking-wider text-cyan-700 flex items-center justify-between mb-2">
               <span class="flex items-center gap-1.5">
                 <span class="w-1.5 h-1.5 rounded-full bg-cyan-600"></span>
-                Key Software Engineering Projects
+                Work Experience (Real-World Production)
               </span>
-              <span class="text-[9.5px] font-normal text-slate-400">ผลงานโปรเจกต์เชิงลึก</span>
+              <span class="text-[9px] font-bold text-indigo-700 bg-indigo-50 px-1.5 py-0.5 rounded border border-indigo-200">
+                Production Experience
+              </span>
             </h2>
 
-            <!-- Project 1: PHA-THAI AI -->
-            <div class="mb-3 pb-2.5 border-b border-slate-100">
+            <!-- Exp 1: Tobacco Forum 24th -->
+            <div class="mb-2 pb-1.5 border-b border-slate-100">
               <div class="flex items-baseline justify-between">
-                <h3 class="text-xs font-bold text-slate-900">
+                <div>
+                  <h3 class="text-[11px] font-bold text-slate-900">
+                    Lead Full-Stack Web Developer &amp; System Architect
+                  </h3>
+                  <div class="text-[10px] font-semibold text-cyan-700">
+                    งานประชุมวิชาการสุขภาพระดับชาติ ครั้งที่ 24 (ศจย. / สสส. / รามาธิบดี)
+                  </div>
+                </div>
+                <span class="text-[9px] font-mono text-slate-400">ส.ค. 2026</span>
+              </div>
+              <p class="text-[9.5px] text-slate-600 mt-0.5 leading-normal">
+                พัฒนา All-in-One Hybrid Community Platform รองรับผู้ร่วมงาน On-site &amp; Online: วางระบบ <strong>Live Stream Real-time Voting</strong> โหวตสดบนหน้าสตรีม, <strong>Face Scan AI Gallery</strong> อัปโหลดเซลฟี่ค้นหารูปถ่ายด้วย AI, และออกบัตร <strong>E-Ticket (QR Check-in)</strong>
+              </p>
+              <div class="flex flex-wrap gap-1 mt-0.5 text-[8.5px] text-slate-500">
+                <span class="font-semibold text-slate-700">Stack:</span>
+                <span>PHP</span> &bull; <span>MySQL</span> &bull; <span>Live Stream Real-time Voting</span> &bull; <span>Face Scan AI</span> &bull; <span>E-Ticket</span>
+              </div>
+            </div>
+
+            <!-- Exp 2: ForumXtra & Anona Websites -->
+            <div class="mb-2 pb-1.5 border-b border-slate-100">
+              <div class="flex items-baseline justify-between">
+                <div>
+                  <h3 class="text-[11px] font-bold text-slate-900">
+                    Website Manager &amp; Technical Maintainer
+                  </h3>
+                  <div class="text-[10px] font-semibold text-cyan-700">
+                    ForumXtra Platform &amp; Anona-event Corporate Websites
+                  </div>
+                </div>
+                <span class="text-[9px] font-mono text-slate-400">เม.ย. 2026 – ปัจจุบัน</span>
+              </div>
+              <p class="text-[9.5px] text-slate-600 mt-0.5 leading-normal">
+                ดูแลและบริหารจัดการแพลตฟอร์มสัมมนา ForumXtra และเว็บไซต์หลัก anona-event.com ที่พัฒนาด้วย <strong>PHP &amp; MySQL</strong>: รักษาเสถียรภาพเซิร์ฟเวอร์แบบ High Concurrency ในช่วงงานอีเวนต์, ปรับแต่งโมดูลระบบเฉพาะกิจ (Tailored Event Modules), ดูแลระบบความปลอดภัย SSL และโดเมน DNS
+              </p>
+              <div class="flex flex-wrap gap-1 mt-0.5 text-[8.5px] text-slate-500">
+                <span class="font-semibold text-slate-700">Stack:</span>
+                <span>PHP</span> &bull; <span>MySQL</span> &bull; <span>Platform Management</span> &bull; <span>Tailored Event Modules</span> &bull; <span>High Concurrency</span>
+              </div>
+            </div>
+
+            <!-- Exp 3: EGAT DIGIWAR Season 7 -->
+            <div class="mb-1 pb-1">
+              <div class="flex items-baseline justify-between">
+                <div>
+                  <h3 class="text-[11px] font-bold text-slate-900">
+                    Full-Stack Developer &amp; Automation Engineer
+                  </h3>
+                  <div class="text-[10px] font-semibold text-cyan-700">
+                    โครงการ “EGAT DIGIWAR Season 7” (กฟผ. 2568 / สทน.)
+                  </div>
+                </div>
+                <span class="text-[9px] font-mono text-slate-400">พ.ย. 2025</span>
+              </div>
+              <p class="text-[9.5px] text-slate-600 mt-0.5 leading-normal">
+                ออกแบบระบบให้คะแนนคลิปประกวดสำหรับคณะกรรมการ 4 ท่าน รวมและแสดงผลคะแนนสดแบบ <strong>Real-time Live Tally</strong> บนเวทีรอบ Final, ระบบส่งผลงาน (Submission System) และ Automation ซิงค์ข้อมูลเข้า <strong>Google Sheets API</strong>
+              </p>
+              <div class="flex flex-wrap gap-1 mt-0.5 text-[8.5px] text-slate-500">
+                <span class="font-semibold text-slate-700">Stack:</span>
+                <span>Real-time Judge Scoring</span> &bull; <span>Google Sheets API</span> &bull; <span>LINE OA Broadcast</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- 2. KEY ENGINEERING PROJECTS (หมวดโปรเจกต์เด่น) -->
+          <div>
+            <h2 class="text-[11.5px] font-extrabold uppercase tracking-wider text-cyan-700 flex items-center justify-between mb-2">
+              <span class="flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan-600"></span>
+                Key Software Projects
+              </span>
+              <span class="text-[9px] font-normal text-slate-400">ผลงานระบบและนวัตกรรม</span>
+            </h2>
+
+            <!-- Project 1: SlipScan AI -->
+            <div class="mb-2 pb-1.5 border-b border-slate-100">
+              <div class="flex items-baseline justify-between">
+                <h3 class="text-[11px] font-bold text-slate-900">
+                  SlipScan AI : บันทึกรายจ่ายอัตโนมัติจากสลิปโอนเงินผ่าน LINE (Serverless n8n)
+                </h3>
+                <span class="text-[8.5px] font-semibold text-purple-700 bg-purple-50 px-1 py-0.2 rounded">LINE Bot + Gemini</span>
+              </div>
+              <p class="text-[9.5px] text-slate-600 mt-0.5 leading-normal">
+                ออกแบบ Serverless Pipeline ด้วย n8n เชื่อมต่อ LINE OA Webhook ใช้ OCR สกัดข้อความและ Google Gemini AI จำแนกยอดเงิน หมวดหมู่ คู่ค้าเป็น JSON บันทึกลง Google Sheets และ Drive อัตโนมัติ พร้อมเว็บแอปพลิเคชัน LINE LIFF (CRUD)
+              </p>
+              <div class="flex flex-wrap gap-1 mt-0.5 text-[8.5px] text-slate-500">
+                <span class="font-semibold text-slate-700">Tech:</span>
+                <span>n8n</span> &bull; <span>Google Gemini AI</span> &bull; <span>LINE Messaging API / LIFF</span> &bull; <span>Google Sheets API</span>
+              </div>
+            </div>
+
+            <!-- Project 2: PHA-THAI AI -->
+            <div class="mb-2 pb-1.5 border-b border-slate-100">
+              <div class="flex items-baseline justify-between">
+                <h3 class="text-[11px] font-bold text-slate-900">
                   PHA-THAI AI : แพลตฟอร์ม RAG อนุรักษ์ภูมิปัญญาผ้าไทย 76 จังหวัด
                 </h3>
-                <span class="text-[9.5px] font-semibold text-cyan-600 bg-cyan-50 px-1.5 py-0.5 rounded">RAG Architecture</span>
+                <span class="text-[8.5px] font-semibold text-cyan-700 bg-cyan-50 px-1 py-0.2 rounded">RAG Pipeline</span>
               </div>
-              <p class="text-[10px] text-slate-600 mt-1 leading-normal">
-                แก้ปัญหา AI เกิด Hallucination ในข้อมูลมรดกวัฒนธรรม โดยพัฒนาระบบสืบค้น RAG ร่วมกับ PyThaiNLP, Tokenization และ Vector Database พร้อมกำหนด Refusal Policy ป้องกันตอบนอกขอบเขต ให้ข้อมูลลวดลายและเทคนิคการทอ OTOP ได้อย่างแม่นยำตามเป้าหมาย SDG 8 &amp; 11
+              <p class="text-[9.5px] text-slate-600 mt-0.5 leading-normal">
+                แก้ปัญหา AI Hallucination ในข้อมูลวัฒนธรรม พัฒนาระบบสืบค้น RAG ร่วมกับ PyThaiNLP, Vector DB และกำหนด Refusal Policy ป้องกันตอบนอกขอบเขต ให้ข้อมูลลวดลายและเทคนิคการทอ OTOP ได้อย่างแม่นยำตามเป้าหมาย SDG 8 &amp; 11
               </p>
-              <div class="flex flex-wrap gap-1 mt-1 text-[9px] text-slate-500">
+              <div class="flex flex-wrap gap-1 mt-0.5 text-[8.5px] text-slate-500">
                 <span class="font-semibold text-slate-700">Tech:</span>
                 <span>Python</span> &bull; <span>RAG</span> &bull; <span>FastAPI</span> &bull; <span>React</span> &bull; <span>Vector DB</span> &bull; <span>PyThaiNLP</span>
               </div>
             </div>
 
-            <!-- Project 2: SlipScan AI -->
-            <div class="mb-3 pb-2.5 border-b border-slate-100">
-              <div class="flex items-baseline justify-between">
-                <h3 class="text-xs font-bold text-slate-900">
-                  SlipScan AI : ระบบบันทึกรายจ่ายอัตโนมัติจากสลิปโอนเงินผ่าน LINE
-                </h3>
-                <span class="text-[9.5px] font-semibold text-purple-600 bg-purple-50 px-1.5 py-0.5 rounded">Serverless n8n</span>
-              </div>
-              <p class="text-[10px] text-slate-600 mt-1 leading-normal">
-                ออกแบบ Serverless Pipeline ด้วย n8n เชื่อมต่อ LINE OA Webhook ใช้ OCR.space สกัดข้อความดิบ และ Google Gemini AI จำแนกยอดเงิน หมวดหมู่ คู่ค้าเป็น JSON บันทึกลง Google Sheets และตอบกลับด้วย Dynamic Flex Message พร้อมเว็บแอปพลิเคชัน LINE LIFF (CRUD)
-              </p>
-              <div class="flex flex-wrap gap-1 mt-1 text-[9px] text-slate-500">
-                <span class="font-semibold text-slate-700">Tech:</span>
-                <span>n8n</span> &bull; <span>Google Gemini AI</span> &bull; <span>LINE Messaging API</span> &bull; <span>LIFF</span> &bull; <span>Google Sheets API</span>
-              </div>
-            </div>
-
-            <!-- Project 3: Thamsod (ถามสด) -->
-            <div class="mb-3 pb-2.5 border-b border-slate-100">
-              <div class="flex items-baseline justify-between">
-                <h3 class="text-xs font-bold text-slate-900">
-                  Thamsod (ถามสด) : แพลตฟอร์ม Interactive Q&amp;A สัมมนาแบบเรียลไทม์
-                </h3>
-                <span class="text-[9.5px] font-semibold text-blue-600 bg-blue-50 px-1.5 py-0.5 rounded">WebSocket SPA</span>
-              </div>
-              <p class="text-[10px] text-slate-600 mt-1 leading-normal">
-                แก้ปัญหาผู้ฟังไม่กล้าถามในงานสัมมนา พัฒนา Single-Page Application (SPA) สื่อสารสองทางแบบเรียลไทม์ด้วย Socket.io แบ่ง 3 มุมมอง: Host (อนุมัติ/คัดกรองคำถาม), Guest (สแกน QR ถามแบบ Anonymous &amp; Upvote), และ Presentation Viewer (แสดงคำถามบนจอโปรเจกเตอร์)
-              </p>
-              <div class="flex flex-wrap gap-1 mt-1 text-[9px] text-slate-500">
-                <span class="font-semibold text-slate-700">Tech:</span>
-                <span>React</span> &bull; <span>Node.js (Express)</span> &bull; <span>Socket.io</span> &bull; <span>MongoDB</span> &bull; <span>JWT</span> &bull; <span>Vite</span>
-              </div>
-            </div>
-
-            <!-- Project 4: FarmJet -->
-            <div class="mb-3 pb-2.5 border-b border-slate-100">
-              <div class="flex items-baseline justify-between">
-                <h3 class="text-xs font-bold text-slate-900">
-                  FarmJet : แพลตฟอร์มตลาดกลาง E-Commerce สินค้าและผลผลิตจากฟาร์ม
-                </h3>
-                <span class="text-[9.5px] font-semibold text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded">ASP.NET Core</span>
-              </div>
-              <p class="text-[10px] text-slate-600 mt-1 leading-normal">
-                พัฒนา Web Application เชื่อมต่อฟาร์มท้องถิ่นตรงสู่ผู้บริโภค รองรับ 3 บทบาท (Customer, Farmer, Admin) มีระบบคำนวณค่าจัดส่งตามระยะทางจริงจากพิกัด GPS ตะกร้าสินค้าเชื่อมต่อฐานข้อมูล และระบบ Flash Sale คำนวณส่วนลดอัตโนมัติ
-              </p>
-              <div class="flex flex-wrap gap-1 mt-1 text-[9px] text-slate-500">
-                <span class="font-semibold text-slate-700">Tech:</span>
-                <span>C#</span> &bull; <span>ASP.NET Core MVC</span> &bull; <span>MySQL</span> &bull; <span>SQL Server</span> &bull; <span>GPS Geolocation</span>
-              </div>
-            </div>
-
-            <!-- Project 5: Slide Me -->
+            <!-- Project 3: Thamsod -->
             <div>
               <div class="flex items-baseline justify-between">
-                <h3 class="text-xs font-bold text-slate-900">
-                  Slide Me : แอปพลิเคชันบริการเรียกรถสไลด์และช่วยเหลือฉุกเฉินบนท้องถนน
+                <h3 class="text-[11px] font-bold text-slate-900">
+                  Thamsod (ถามสด) : แพลตฟอร์ม Interactive Q&amp;A สัมมนาแบบเรียลไทม์
                 </h3>
-                <span class="text-[9.5px] font-semibold text-cyan-600 bg-cyan-50 px-1.5 py-0.5 rounded">On-Demand API</span>
+                <span class="text-[8.5px] font-semibold text-blue-700 bg-blue-50 px-1 py-0.2 rounded">WebSocket SPA</span>
               </div>
-              <p class="text-[10px] text-slate-600 mt-1 leading-normal">
-                ออกแบบระบบ Customer App และ Driver App สำหรับช่วยเหลือผู้ใช้รถฉุกเฉิน มีระบบค้นหาพิกัด GPS, การคำนวณราคาประเมินตามระยะทางจริงก่อนยืนยัน, และการติดตามพิกัดรถยกแบบเรียลไทม์
+              <p class="text-[9.5px] text-slate-600 mt-0.5 leading-normal">
+                Single-Page Application สื่อสารสองทางแบบ Real-time ด้วย React + Socket.io แบ่ง 3 ฝั่ง: Host ควบคุมเซสชัน/คัดกรองคำถาม, Guest สแกน QR ถาม Anonymous และกด Upvote, และ Presentation Viewer ฉายขึ้นจอโปรเจกเตอร์สด
               </p>
-              <div class="flex flex-wrap gap-1 mt-1 text-[9px] text-slate-500">
+              <div class="flex flex-wrap gap-1 mt-0.5 text-[8.5px] text-slate-500">
                 <span class="font-semibold text-slate-700">Tech:</span>
-                <span>React</span> &bull; <span>Node.js</span> &bull; <span>Express</span> &bull; <span>REST API</span> &bull; <span>Figma</span>
+                <span>React</span> &bull; <span>Node.js (Express)</span> &bull; <span>Socket.io</span> &bull; <span>MongoDB</span> &bull; <span>Tailwind CSS</span>
               </div>
             </div>
 
@@ -310,12 +403,13 @@
     </div>
 
     <!-- FOOTER -->
-    <footer class="pt-2.5 border-t border-slate-200 flex items-center justify-between text-[9.5px] text-slate-400">
+    <footer class="pt-2 border-t border-slate-200 flex items-center justify-between text-[9px] text-slate-400">
       <div>
-        Portfolio Showcase: <a href="https://woradech-dev.github.io" class="text-cyan-600 hover:underline font-medium">woradech-dev.github.io</a>
+        Portfolio: <a href="https://woradech-dev.github.io/PortfolioWebsite/" target="_blank" class="text-cyan-600 hover:underline font-medium">woradech-dev.github.io/PortfolioWebsite</a>
+        &bull; LinkedIn: <a href="https://www.linkedin.com/in/woradech-dev/" target="_blank" class="text-cyan-600 hover:underline font-medium">linkedin.com/in/woradech-dev</a>
       </div>
       <div>
-        Updated 2026 &bull; Woradech Ardvichai
+        Updated 2026 &bull; Woradech Ardvichai (061-813-8787)
       </div>
     </footer>
 

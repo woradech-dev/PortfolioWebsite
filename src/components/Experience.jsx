@@ -68,6 +68,34 @@ export default function Experience({ lang }) {
                     {item.description}
                   </p>
 
+                  {/* Context: About Event & Challenge */}
+                  {(item.aboutEvent || item.challenge) && (
+                    <div className="mb-5 grid grid-cols-1 md:grid-cols-2 gap-3.5">
+                      {item.aboutEvent && (
+                        <div className="p-3.5 rounded-xl bg-slate-50/90 dark:bg-slate-900/50 border border-slate-200/70 dark:border-slate-800/80">
+                          <div className="text-[11px] font-bold font-mono uppercase tracking-wider text-indigo-600 dark:text-indigo-400 mb-1.5 flex items-center gap-1.5">
+                            <Building2 className="w-3.5 h-3.5 text-indigo-500" />
+                            <span>{t.aboutEventLabel || "เกี่ยวกับงานและองค์กร"}</span>
+                          </div>
+                          <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                            {item.aboutEvent}
+                          </p>
+                        </div>
+                      )}
+                      {item.challenge && (
+                        <div className="p-3.5 rounded-xl bg-amber-50/40 dark:bg-amber-950/20 border border-amber-200/60 dark:border-amber-900/40">
+                          <div className="text-[11px] font-bold font-mono uppercase tracking-wider text-amber-700 dark:text-amber-400 mb-1.5 flex items-center gap-1.5">
+                            <span className="text-amber-500 font-black">⚡</span>
+                            <span>{t.challengeLabel || "โจทย์และความท้าทาย"}</span>
+                          </div>
+                          <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                            {item.challenge}
+                          </p>
+                        </div>
+                      )}
+                    </div>
+                  )}
+
                   {/* Deliverables / Key Highlights */}
                   {item.highlights && item.highlights.length > 0 && (
                     <div className="mb-6 p-4 rounded-xl bg-slate-50/80 dark:bg-slate-900/60 border border-slate-200/80 dark:border-slate-800/80">
