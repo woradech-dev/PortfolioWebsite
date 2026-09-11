@@ -34,24 +34,24 @@ export default function Navbar({ lang, setLang, theme, toggleTheme, data, person
         </a>
 
         {/* Desktop Nav Links */}
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="hidden lg:flex items-center gap-5 xl:gap-6">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors py-1 relative"
+              className="text-xs xl:text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors py-1 whitespace-nowrap"
             >
               {link.label}
             </a>
           ))}
         </nav>
 
-        {/* Desktop Controls (Lang, Theme, Resume) */}
-        <div className="hidden sm:flex items-center gap-2.5">
+        {/* Desktop Controls (Lang, Theme, Resume & CV) */}
+        <div className="hidden md:flex items-center gap-2">
           {/* Language Switcher */}
           <button
             onClick={() => setLang(lang === 'th' ? 'en' : 'th')}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700/60 transition-all"
+            className="flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700/60 transition-all"
             aria-label="Switch language"
           >
             <Globe className="w-3.5 h-3.5 text-cyan-500" />
@@ -61,7 +61,7 @@ export default function Navbar({ lang, setLang, theme, toggleTheme, data, person
           {/* Theme Switcher */}
           <button
             onClick={toggleTheme}
-            className="p-2 rounded-lg bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700/60 transition-all"
+            className="p-1.5 rounded-lg bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700/60 transition-all"
             aria-label="Toggle dark/light mode"
           >
             {theme === 'dark' ? (
@@ -71,42 +71,43 @@ export default function Navbar({ lang, setLang, theme, toggleTheme, data, person
             )}
           </button>
 
-          {/* Resume & CV Buttons */}
-          <a
-            href={personal.resumePdfUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700 hover:border-cyan-500 transition-all"
-            title="Resume 1 หน้า A4"
-          >
-            <FileText className="w-3.5 h-3.5 text-cyan-500" />
-            <span>{t.resume || 'Resume'}</span>
-          </a>
-
-          <a
-            href={personal.cvPdfUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-gradient-to-r from-cyan-500 to-indigo-600 text-white shadow-sm shadow-cyan-500/20 hover:opacity-95 hover:shadow-cyan-500/30 transition-all"
-            title="Curriculum Vitae ฉบับเต็ม 3 หน้า"
-          >
-            <FileText className="w-3.5 h-3.5" />
-            <span>{t.cv || 'CV'}</span>
-            <ArrowUpRight className="w-3 h-3 opacity-70" />
-          </a>
+          {/* Combined Clean Document Buttons */}
+          <div className="flex items-center p-0.5 rounded-lg bg-slate-100 dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700/60">
+            <a
+              href={personal.resumePdfUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-xs font-semibold text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-slate-700 transition-all"
+              title="เรซูเม่ 1 หน้า A4"
+            >
+              <FileText className="w-3.5 h-3.5 text-cyan-500" />
+              <span>Resume</span>
+            </a>
+            <div className="w-[1px] h-3.5 bg-slate-300 dark:bg-slate-700"></div>
+            <a
+              href={personal.cvPdfUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-xs font-bold bg-gradient-to-r from-cyan-500 to-indigo-600 text-white shadow-xs hover:opacity-95 transition-all"
+              title="Curriculum Vitae ฉบับเต็ม 3 หน้า"
+            >
+              <span>Full CV</span>
+              <ArrowUpRight className="w-3 h-3 opacity-80" />
+            </a>
+          </div>
         </div>
 
-        {/* Mobile menu trigger */}
-        <div className="flex items-center gap-2 sm:hidden">
+        {/* Mobile / Tablet menu trigger (below lg breakpoint) */}
+        <div className="flex items-center gap-1.5 lg:hidden">
           <button
             onClick={toggleTheme}
-            className="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200"
+            className="p-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 md:hidden"
           >
             {theme === 'dark' ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-indigo-600" />}
           </button>
           <button
             onClick={() => setLang(lang === 'th' ? 'en' : 'th')}
-            className="px-2.5 py-1.5 rounded-lg text-xs font-bold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200"
+            className="px-2 py-1 rounded-lg text-xs font-bold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 md:hidden"
           >
             {lang === 'th' ? 'EN' : 'TH'}
           </button>
