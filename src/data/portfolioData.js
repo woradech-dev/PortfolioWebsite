@@ -4,6 +4,7 @@ export const portfolioData = {
       about: "เกี่ยวกับผม",
       skills: "ทักษะและความเชี่ยวชาญ",
       projects: "ผลงานโปรเจกต์",
+      experience: "ประสบการณ์ทำงาน",
       contact: "ติดต่อ",
       resume: "เรซูเม่ (Resume)",
       role: "นักพัฒนาซอฟต์แวร์",
@@ -66,6 +67,10 @@ export const portfolioData = {
       filterAutomation: "Automation & Bots",
       filterAi: "Data Science & AI",
       filterOther: "อื่นๆ",
+      featuredBadge: "⭐ ผลงานเรือธง (Featured Project)",
+      featuredSubtitle: "ระบบที่ผ่านการ Deploy ใช้งานจริง และเชื่อมโยงหลายเทคโนโลยีเข้าด้วยกัน",
+      roleLabel: "บทบาทหน้าที่ (Your Role):",
+      outcomeLabel: "ผลลัพธ์ / สิ่งที่ได้เรียนรู้ (Outcome):",
       problemLabel: "โจทย์ปัญหา (Problem):",
       solutionLabel: "โซลูชัน (Solution):",
       techLabel: "Tech Stack:",
@@ -79,6 +84,30 @@ export const portfolioData = {
       quote: "If you're tired, just take a break. Because just 'take a break' doesn't mean you 'giving up' on it, once you're healed you can always keep moving forward.",
       quoteAuthor: "Woradech Ardvichai (Drop)",
       quoteNote: "คติประจำใจที่ช่วยให้ผมไม่หยุดพัฒนา และพร้อมเผชิญหน้ากับความท้าทายใหม่ๆ ทางเทคโนโลยีเสมอ",
+      targetRolesTitle: "เป้าหมายสายงาน (Target Career Roles)",
+      targetRoles: [
+        "Full-Stack Developer",
+        "Backend Developer",
+        "AI & Automation Engineer"
+      ],
+      strengthsTitle: "จุดแข็งหลัก 3 ประการ (Core Strengths)",
+      strengths: [
+        {
+          num: "01",
+          title: "Fast Learner (เรียนรู้ได้รวดเร็ว)",
+          desc: "เปิดรับและทำความเข้าใจเครื่องมือหรือภาษาใหม่ๆ ได้ไว พิสูจน์ด้วยผลการเรียน GPA 3.88 และการสร้างผลงานข้ามสายเทคโนโลยี"
+        },
+        {
+          num: "02",
+          title: "Crisis & Ad-hoc Problem Solving (แก้ปัญหาเฉพาะหน้า)",
+          desc: "มีทักษะการรับมือกับสถานการณ์ไม่คาดคิด โดยเฉพาะระบบงานอีเวนต์สดและงานระบบ Production ที่ต้องการความแม่นยำสูง"
+        },
+        {
+          num: "03",
+          title: "Systematic Thinking (คิดอย่างเป็นระบบ)",
+          desc: "ถนัดการมองภาพรวมสถาปัตยกรรม ออกแบบ Data Flow และวางระบบ Automation เพื่อลดงานซ้ำซ้อนอย่างมีแบบแผน"
+        }
+      ],
       educationTitle: "ประวัติการศึกษา (Education)",
       university: "มหาวิทยาลัยศรีปทุม (Sripatum University)",
       faculty: "คณะเทคโนโลยีสารสนเทศ",
@@ -119,6 +148,7 @@ export const portfolioData = {
       about: "About",
       skills: "Skills",
       projects: "Projects",
+      experience: "Experience",
       contact: "Contact",
       resume: "Resume (PDF)",
       role: "Software Developer",
@@ -181,11 +211,15 @@ export const portfolioData = {
       filterAutomation: "Automation & Bots",
       filterAi: "Data Science & AI",
       filterOther: "Other",
+      featuredBadge: "⭐ Flagship Project (Live Deployed)",
+      featuredSubtitle: "Production-ready system integrating multi-service APIs, cloud orchestration, and real-time user workflows.",
+      roleLabel: "Your Role:",
+      outcomeLabel: "Outcome & Key Takeaways:",
       problemLabel: "Problem Statement:",
       solutionLabel: "Engineered Solution:",
       techLabel: "Tech Stack:",
       repoButton: "View on GitHub",
-      demoButton: "Live Demo",
+      demoButton: "Launch Live Demo",
       privateProjectBadge: "🔒 Academic / Private Project",
     },
     about: {
@@ -194,6 +228,30 @@ export const portfolioData = {
       quote: "If you're tired, just take a break. Because just 'take a break' doesn't mean you 'giving up' on it, once you're healed you can always keep moving forward.",
       quoteAuthor: "Woradech Ardvichai (Drop)",
       quoteNote: "A personal guiding principle that drives resilience, deliberate problem solving, and continuous growth.",
+      targetRolesTitle: "Target Career Roles",
+      targetRoles: [
+        "Full-Stack Developer",
+        "Backend Developer",
+        "AI & Automation Engineer"
+      ],
+      strengthsTitle: "Core Strengths",
+      strengths: [
+        {
+          num: "01",
+          title: "Rapid Learner (Fast Learner)",
+          desc: "Quickly absorbs complex concepts and emerging tech stacks, validated by a 3.88 GPA and diverse cross-paradigm projects."
+        },
+        {
+          num: "02",
+          title: "Crisis & Ad-hoc Problem Solver",
+          desc: "Composed under pressure, proficient at identifying root causes and troubleshooting live production systems and real-time events."
+        },
+        {
+          num: "03",
+          title: "Systematic & Architectural Thinker",
+          desc: "Strong focus on structured data flows, modular architectural patterns, and workflow automation that eliminates operational friction."
+        }
+      ],
       educationTitle: "Academic Education",
       university: "Sripatum University (SPU)",
       faculty: "Faculty of Information Technology",

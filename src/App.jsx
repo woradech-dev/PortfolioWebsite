@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
-import About from './components/About';
+import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { portfolioData } from './data/portfolioData';
@@ -57,9 +58,10 @@ export default function App() {
       
       <main className="flex-1">
         <Hero data={currentData} personal={personal} />
+        <About data={currentData} personal={personal} />
         <Skills data={currentData} />
         <Projects data={currentData} lang={lang} />
-        <About data={currentData} personal={personal} />
+        <Experience lang={lang} />
         <Contact data={currentData} personal={personal} />
       </main>
 

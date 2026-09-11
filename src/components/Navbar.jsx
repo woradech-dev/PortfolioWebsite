@@ -10,6 +10,7 @@ export default function Navbar({ lang, setLang, theme, toggleTheme, data, person
     { href: '#about', label: t.about },
     { href: '#skills', label: t.skills },
     { href: '#projects', label: t.projects },
+    { href: '#experience', label: t.experience || (lang === 'th' ? 'ประสบการณ์' : 'Experience') },
     { href: '#contact', label: t.contact },
   ];
 

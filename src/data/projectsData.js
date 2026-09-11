@@ -48,35 +48,11 @@ export const PROJECT_TEMPLATE = {
   demo: "", // ลิงก์ Live Demo หรือเว้นว่าง "" ได้
 };
 
-// 🚀 รายการโปรเจกต์จริงของคุณเฉพาะในโฟลเดอร์ "Project":
+// 🚀 รายการโปรเจกต์จริงของคุณ (อัปเดตข้อมูล Evidence, Role, Outcome และ Demo จริง):
 export const projectsList = [
   {
-    id: "pha-thai-ai",
-    category: "ai",
-    thumbnail: "./projects/pha-thai-ai.png",
-    title: {
-      th: "PHA-THAI AI: แพลตฟอร์มอนุรักษ์ภูมิปัญญาผ้าไทยด้วยสถาปัตยกรรม RAG",
-      en: "PHA-THAI AI: Thai Fabric Cultural Wisdom Preservation via RAG",
-    },
-    tagline: {
-      th: "ระบบ AI Companion และ Web Application ที่ใช้ RAG ในการสืบค้นและถ่ายทอดภูมิปัญญาผ้าไทย 76 จังหวัด ป้องกันข้อมูลคลาดเคลื่อน",
-      en: "RAG-driven AI Companion and Web Platform preserving Thai regional fabric wisdom across 76 provinces with zero hallucination.",
-    },
-    problem: {
-      th: "ภูมิปัญญาผ้าไทยและลวดลายวัฒนธรรมส่วนใหญ่ถ่ายทอดแบบมุขปาฐะ (ปากต่อปาก) และกระจายตัวอยู่ในชุมชนท้องถิ่น ข้อมูลบนอินเทอร์เน็ตกระจัดกระจายและขาดความถูกต้อง ทำให้โมเดล AI ทั่วไปเกิดปัญหา Hallucination ให้ข้อมูลลวดลายและกรรมวิธีผิดพลาด ส่งผลให้มรดกทางวัฒนธรรมเสี่ยงสูญหายและคนรุ่นใหม่เข้าถึงได้ยาก",
-      en: "Traditional Thai textile heritage is largely localized and fragmented online, causing generic AI models to hallucinate cultural nuances, weaving techniques, and regional authenticity.",
-    },
-    solution: {
-      th: "พัฒนา Web Application และสถาปัตยกรรม RAG (Retrieval-Augmented Generation) รวบรวมฐานข้อมูลภูมิปัญญาผ้าไทยและมาตรฐานหม่อนไหมแบบ Open Government Data ผ่านกระบวนการ Data Pipeline & NLP (PyThaiNLP, Tokenization, Embedding) เพื่อตอบคำถามเฉพาะเจาะจงเกี่ยวกับประวัติ ลวดลาย เทคนิคการทอ และแหล่งผลิต OTOP ได้อย่างแม่นยำตามเป้าหมาย SDG 8 และ 11 พร้อมกำหนด Refusal Policy ป้องกันการตอบนอกขอบเขตข้อมูล",
-      en: "Engineered a domain-specific RAG pipeline and web application integrating open cultural datasets, PyThaiNLP preprocessing, and strict retrieval refusal policies to deliver verifiable insights on textile patterns, crafting methods, and regional sources aligned with SDGs 8 & 11.",
-    },
-    tech: ["Python", "RAG", "FastAPI", "React", "PyThaiNLP", "Vector Database", "Tailwind CSS"],
-    github: "",
-    demo: "",
-  },
-
-  {
     id: "slipscan-ai",
+    isFeatured: true,
     category: "automation",
     thumbnail: "./projects/slipscan-ai.png",
     title: {
@@ -86,6 +62,14 @@ export const projectsList = [
     tagline: {
       th: "ระบบบัญชีอัจฉริยะแบบ Serverless Orchestration เปลี่ยนภาพสลิปโอนเงินเป็นข้อมูลรายจ่ายผ่าน LINE Chatbot ในเสี้ยววินาที",
       en: "Serverless n8n workflow pipeline converting transaction receipt images into structured financial accounting via LINE Official Account and Gemini AI.",
+    },
+    role: {
+      th: "วาง Flow การทำงานและออกแบบสถาปัตยกรรมระบบทั้งหมด (System Architect), จัดการฐานข้อมูล, พัฒนาระบบเชื่อมต่อ LINE Bot Webhook และสร้าง Website Display สำหรับแสดงผลข้อมูล",
+      en: "Designed end-to-end workflow architecture & orchestrations, managed data persistence, integrated LINE Bot Webhook pipelines, and developed frontend analytics displays.",
+    },
+    outcome: {
+      th: "เรียนรู้การทำ Serverless Orchestration ด้วย n8n เชื่อมโยงหลาย Services (LINE Messaging API, OCR, Gemini AI) สำเร็จเป็นระบบบัญชีอัตโนมัติที่ Deploy ใช้งานได้จริงบน LINE และช่วยประหยัดเวลาการบันทึกรายจ่าย",
+      en: "Mastered multi-service serverless orchestration with n8n, OCR, and Generative AI, successfully deploying a frictionless production LINE Bot used by actual users.",
     },
     problem: {
       th: "การจดบันทึกรายรับ-รายจ่ายประจำวันเป็นเรื่องยุ่งยาก ผู้ใช้มักลืมจดหรือขี้เกียจพิมพ์รายละเอียดลงแอปบัญชีแบบเดิมๆ ทำให้การจัดการการเงินส่วนบุคคลขาดความต่อเนื่อง ขาดการสรุปข้อมูลเชิงสถิติ และข้อมูลตกหล่นได้ง่าย",
@@ -97,11 +81,97 @@ export const projectsList = [
     },
     tech: ["n8n", "Google Gemini AI", "LINE Messaging API", "LINE LIFF", "OCR.space", "Google Sheets API", "JavaScript"],
     github: "",
-    demo: "",
+    demo: "https://lin.ee/5YQCjLH",
+    demoLabel: {
+      th: "เพิ่มเพื่อน LINE Bot (ทดลองใช้จริง)",
+      en: "Try Live LINE Bot",
+    },
+  },
+
+  {
+    id: "pha-thai-ai",
+    isFeatured: false,
+    category: "ai",
+    thumbnail: "./projects/pha-thai-ai.png",
+    title: {
+      th: "PHA-THAI AI: แพลตฟอร์มอนุรักษ์ภูมิปัญญาผ้าไทยด้วยสถาปัตยกรรม RAG",
+      en: "PHA-THAI AI: Thai Fabric Cultural Wisdom Preservation via RAG",
+    },
+    tagline: {
+      th: "ระบบ AI Companion และ Web Application ที่ใช้ RAG ในการสืบค้นและถ่ายทอดภูมิปัญญาผ้าไทย 76 จังหวัด ป้องกันข้อมูลคลาดเคลื่อน",
+      en: "RAG-driven AI Companion and Web Platform preserving Thai regional fabric wisdom across 76 provinces with zero hallucination.",
+    },
+    role: {
+      th: "ร่วมทำ Data Preparation & Data Analysis ร่วมกับทีม 2 คน และรับผิดชอบหลักในการพัฒนา Modeling AI RAG, Data Science Pipeline และ Backend API",
+      en: "Collaborated on data prep & analysis; solely engineered AI RAG modeling, domain-specific NLP retrieval pipelines, and backend APIs.",
+    },
+    outcome: {
+      th: "โปรเจกต์ปี 3 ได้เรียนรู้เชิงลึกด้านการจัดการข้อมูลวัฒนธรรม, สถาปัตยกรรม RAG, และการกำหนด Refusal Policy เพื่อป้องกัน Hallucination ของโมเดลภาษา",
+      en: "3rd-year project: Mastered domain-specific RAG engineering, cultural knowledge vectorization, and refusal policies to eliminate AI hallucination.",
+    },
+    problem: {
+      th: "ภูมิปัญญาผ้าไทยและลวดลายวัฒนธรรมส่วนใหญ่ถ่ายทอดแบบมุขปาฐะ (ปากต่อปาก) และกระจายตัวอยู่ในชุมชนท้องถิ่น ข้อมูลบนอินเทอร์เน็ตกระจัดกระจายและขาดความถูกต้อง ทำให้โมเดล AI ทั่วไปเกิดปัญหา Hallucination ให้ข้อมูลลวดลายและกรรมวิธีผิดพลาด ส่งผลให้มรดกทางวัฒนธรรมเสี่ยงสูญหายและคนรุ่นใหม่เข้าถึงได้ยาก",
+      en: "Traditional Thai textile heritage is largely localized and fragmented online, causing generic AI models to hallucinate cultural nuances, weaving techniques, and regional authenticity.",
+    },
+    solution: {
+      th: "พัฒนา Web Application และสถาปัตยกรรม RAG (Retrieval-Augmented Generation) รวบรวมฐานข้อมูลภูมิปัญญาผ้าไทยและมาตรฐานหม่อนไหมแบบ Open Government Data ผ่านกระบวนการ Data Pipeline & NLP (PyThaiNLP, Tokenization, Embedding) เพื่อตอบคำถามเฉพาะเจาะจงเกี่ยวกับประวัติ ลวดลาย เทคนิคการทอ และแหล่งผลิต OTOP ได้อย่างแม่นยำตามเป้าหมาย SDG 8 และ 11 พร้อมกำหนด Refusal Policy ป้องกันการตอบนอกขอบเขตข้อมูล",
+      en: "Engineered a domain-specific RAG pipeline and web application integrating open cultural datasets, PyThaiNLP preprocessing, and strict retrieval refusal policies to deliver verifiable insights on textile patterns, crafting methods, and regional sources aligned with SDGs 8 & 11.",
+    },
+    tech: ["Python", "RAG", "FastAPI", "React", "PyThaiNLP", "Vector Database", "Tailwind CSS"],
+    github: "",
+    demo: "https://phathai.pages.dev/",
+    demoLabel: {
+      th: "Web Demo (Cloudflare Pages)",
+      en: "Web Demo (Cloudflare Pages)",
+    },
+    slideLink: "https://www.canva.com/design/DAHAi238vPc/MqawMepNJK5oScQh0DS-pw/view?utm_content=DAHAi238vPc&utm_campaign=designshare&utm_medium=link&utm_source=viewer",
+    slideLabel: {
+      th: "สไลด์นำเสนอผลงาน (Canva)",
+      en: "Presentation Slides (Canva)",
+    },
+  },
+
+  {
+    id: "thamsod-qa",
+    isFeatured: false,
+    category: "fullstack",
+    thumbnail: "./projects/thamsod-qa.png",
+    title: {
+      th: "Thamsod (ถามสด): แพลตฟอร์มระบบถาม-ตอบสำหรับงานสัมมนาแบบเรียลไทม์",
+      en: "Thamsod: Real-time Interactive Q&A Platform for Seminars",
+    },
+    tagline: {
+      th: "เว็บแอปพลิเคชัน Interactive Q&A แบบเรียลไทม์ผ่าน WebSocket รองรับการถามคำถามแบบไม่ระบุตัวตนและระบบคัดกรองคำถามสำหรับผู้จัดงาน",
+      en: "Interactive real-time Q&A seminar platform featuring anonymous questions, community upvoting, and live moderator curation via WebSockets.",
+    },
+    role: {
+      th: "พัฒนาโครงสร้างเว็บและสถาปัตยกรรมโปรเจกต์ทั้งหมด และเน้นรับผิดชอบหลักในบทบาท 'Host' สำหรับสร้างห้องและควบคุมเซสชัน (ทั้ง Frontend และ Backend)",
+      en: "Architected overall web application and spearheaded the 'Host' role systems for session creation, room control, and moderator controls across frontend and backend.",
+    },
+    outcome: {
+      th: "โปรเจกต์วิชา CSI400 ได้เรียนรู้และลงมือพัฒนา Full-Stack Application และระบบสื่อสารสองทาง Real-time ด้วย WebSockets เป็นครั้งแรก",
+      en: "CSI400 course project: First-hand experience implementing full-stack reactive architecture and bidirectional WebSocket communication.",
+    },
+    problem: {
+      th: "ในการสัมมนาหรือการบรรยายแบบเดิม ผู้เข้าร่วมมักไม่กล้าแสดงความคิดเห็นหรือยกมือถามต่อหน้าสาธารณะ (Public Speaking Anxiety) อีกทั้งผู้จัดงานไม่สามารถคัดกรองและจัดลำดับความสำคัญของคำถามที่ผู้ฟังส่วนใหญ่สนใจได้อย่างมีประสิทธิภาพในเวลาที่จำกัด",
+      en: "Audience participation in large seminars suffers from public speaking anxiety and inefficient question moderation, leaving key audience inquiries unanswered.",
+    },
+    solution: {
+      th: "พัฒนา Single-Page Application (SPA) ด้วย React (Vite) + Tailwind CSS และ Node.js (Express) ร่วมกับ MongoDB และ Socket.io สำหรับการสื่อสารสองทางแบบเรียลไทม์ แบ่งระบบออกเป็น 3 มุมมอง: Host (อนุมัติ/ปฏิเสธ/ไฮไลต์คำถาม), Guest (สแกน QR Code เข้าร่วมเซสชัน ส่งคำถามแบบ Anonymous และกดโหวต Upvote), และ Presentation Viewer (แสดงคำถามบนจอโปรเจกเตอร์แบบเรียลไทม์)",
+      en: "Engineered a reactive single-page application using React, Vite, Node.js, Express, MongoDB, and Socket.io enabling anonymous inquiry submissions, instant upvoting, and moderator workflows with live presentation displays.",
+    },
+    tech: ["React", "Node.js", "Express", "Socket.io", "MongoDB", "Tailwind CSS", "JWT", "Vite"],
+    github: "",
+    demo: "https://thamsod.pages.dev/",
+    demoLabel: {
+      th: "ทดลองใช้งาน (Live Demo)",
+      en: "Launch Live Demo",
+    },
   },
 
   {
     id: "farmjet",
+    isFeatured: false,
     category: "fullstack",
     thumbnail: "./projects/farmjet.png",
     title: {
@@ -111,6 +181,14 @@ export const projectsList = [
     tagline: {
       th: "เว็บแอปพลิเคชันตลาดกลางผลผลิตเกษตรสดใหม่ ส่งตรงจากเกษตรกรถึงผู้บริโภค พร้อมคำนวณค่าส่งตามระยะทางจริง",
       en: "A direct farm-to-table marketplace platform featuring real-time geolocation distance-based shipping and automated promotions.",
+    },
+    role: {
+      th: "พัฒนาคนเดียวทั้งหมด (Solo Full-Stack Developer) ตั้งแต่ออกแบบฐานข้อมูล, ระบบเบื้องหลัง ไปจนถึงหน้าบ้าน Responsive UI",
+      en: "Solo Full-Stack Developer: Designed relational database schemas, server-side business logic, and responsive frontend UI independently.",
+    },
+    outcome: {
+      th: "โปรเจกต์วิชา CSI402 ได้เรียนรู้การใช้ภาษา C# (ASP.NET Core MVC) เป็นครั้งแรกในการเชื่อมต่อ Frontend, Backend และฐานข้อมูล MySQL ร่วมกับระบบคิดค่าส่งตามพิกัด GPS",
+      en: "CSI402 course project: First time mastering C# ASP.NET Core MVC with MySQL, integrating distance-based GPS delivery pricing.",
     },
     problem: {
       th: "สินค้าเกษตรและผลผลิตสดมักผ่านพ่อค้าคนกลางหลายทอด ทำให้ผู้บริโภคต้องซื้อสินค้าในราคาสูงขณะที่เกษตรกรได้รับผลตอบแทนต่ำ อีกทั้งขาดระบบตลาดกลางที่เชื่อมโยงฟาร์มท้องถิ่นโดยตรง และไม่มีการคิดค่าจัดส่งตามระยะทางพิกัดจริงอย่างเป็นธรรม",
@@ -126,32 +204,8 @@ export const projectsList = [
   },
 
   {
-    id: "thamsod-qa",
-    category: "fullstack",
-    thumbnail: "./projects/thamsod-qa.png",
-    title: {
-      th: "Thamsod (ถามสด): แพลตฟอร์มระบบถาม-ตอบสำหรับงานสัมมนาแบบเรียลไทม์",
-      en: "Thamsod: Real-time Interactive Q&A Platform for Seminars",
-    },
-    tagline: {
-      th: "เว็บแอปพลิเคชัน Interactive Q&A แบบเรียลไทม์ผ่าน WebSocket รองรับการถามคำถามแบบไม่ระบุตัวตนและระบบคัดกรองคำถามสำหรับผู้จัดงาน",
-      en: "Interactive real-time Q&A seminar platform featuring anonymous questions, community upvoting, and live moderator curation via WebSockets.",
-    },
-    problem: {
-      th: "ในการสัมมนาหรือการบรรยายแบบเดิม ผู้เข้าร่วมมักไม่กล้าแสดงความคิดเห็นหรือยกมือถามต่อหน้าสาธารณะ (Public Speaking Anxiety) อีกทั้งผู้จัดงานไม่สามารถคัดกรองและจัดลำดับความสำคัญของคำถามที่ผู้ฟังส่วนใหญ่สนใจได้อย่างมีประสิทธิภาพในเวลาที่จำกัด",
-      en: "Audience participation in large seminars suffers from public speaking anxiety and inefficient question moderation, leaving key audience inquiries unanswered.",
-    },
-    solution: {
-      th: "พัฒนา Single-Page Application (SPA) ด้วย React (Vite) + Tailwind CSS และ Node.js (Express) ร่วมกับ MongoDB และ Socket.io สำหรับการสื่อสารสองทางแบบเรียลไทม์ แบ่งระบบออกเป็น 3 มุมมอง: Host (อนุมัติ/ปฏิเสธ/ไฮไลต์คำถาม), Guest (สแกน QR Code เข้าร่วมเซสชัน ส่งคำถามแบบ Anonymous และกดโหวต Upvote), และ Presentation Viewer (แสดงคำถามบนจอโปรเจกเตอร์แบบเรียลไทม์)",
-      en: "Engineered a reactive single-page application using React, Vite, Node.js, Express, MongoDB, and Socket.io enabling anonymous inquiry submissions, instant upvoting, and moderator workflows with live presentation displays.",
-    },
-    tech: ["React", "Node.js", "Express", "Socket.io", "MongoDB", "Tailwind CSS", "JWT", "Vite"],
-    github: "",
-    demo: "",
-  },
-
-  {
     id: "slide-me",
+    isFeatured: false,
     category: "fullstack",
     thumbnail: "./projects/slide-me.png",
     title: {
@@ -161,6 +215,14 @@ export const projectsList = [
     tagline: {
       th: "แพลตฟอร์มจับคู่ผู้ใช้รถที่ประสบเหตุฉุกเฉินกับผู้ให้บริการรถสไลด์ในพื้นที่ใกล้เคียง พร้อมประเมินราคาล่วงหน้าตามระยะทาง GPS",
       en: "On-demand roadside assistance and flatbed towing application connecting stranded drivers with nearest tow operators via GPS routing.",
+    },
+    role: {
+      th: "พัฒนาในส่วน Backend Logic, การคำนวณราคาตามระยะทางพิกัด GPS และระบบ RESTful API ทั้งหมด",
+      en: "Engineered entire backend business logic, GPS distance routing fare estimations, and RESTful API endpoints.",
+    },
+    outcome: {
+      th: "โปรเจกต์ชั้นปีที่ 2 ได้ฝึกฝนการออกแบบ API สำหรับเชื่อมโยง 2 แอปพลิเคชัน (ฝั่งลูกค้า และ ฝั่งคนขับรถสไลด์)",
+      en: "2nd-year project: Gained practical expertise in designing dual-role REST APIs coordinating customer and service driver workflows.",
     },
     problem: {
       th: "เมื่อเกิดอุบัติเหตุหรือรถเสียฉุกเฉิน การค้นหาเบอร์ติดต่อรถสไลด์ที่น่าเชื่อถือเป็นเรื่องยาก ราคาค่าบริการมักไม่โปร่งใส ไม่สามารถประเมินค่าใช้จ่ายล่วงหน้าได้ และไม่สามารถตรวจสอบสถานะหรือพิกัดตำแหน่งของรถยกได้แบบเรียลไทม์",
@@ -172,11 +234,21 @@ export const projectsList = [
     },
     tech: ["React", "Node.js", "Express", "REST API", "Figma", "GPS Geolocation", "JavaScript"],
     github: "",
-    demo: "",
+    demo: "https://woradech-dev.github.io/_SlideMe/",
+    demoLabel: {
+      th: "Demo ฝั่งลูกค้า (Customer App)",
+      en: "Customer App Demo",
+    },
+    extraLink: "https://woradech-dev.github.io/_SlideMeDriver/",
+    extraLinkLabel: {
+      th: "Demo ฝั่งคนขับ (Driver App)",
+      en: "Driver App Demo",
+    },
   },
 
   {
     id: "trash-space",
+    isFeatured: false,
     category: "other",
     thumbnail: "./projects/trash-space.png",
     title: {
@@ -186,6 +258,14 @@ export const projectsList = [
     tagline: {
       th: "เกมปริศนาคณิตศาสตร์เกม 24 ธีมอวกาศ นำแนวคิด Data Structures (Queue, Recursion, Array) มาประยุกต์ใช้ในการควบคุมเกม",
       en: "A dynamic 24 mathematical game leveraging advanced Data Structures like Queue pipelines and Recursive meteor mechanics.",
+    },
+    role: {
+      th: "พัฒนา Game Logic และระบบเบื้องหลังของเกม โดยเน้นการนำ Data Structures มาควบคุมกลไกเกม",
+      en: "Developed core game logic and algorithmic mechanics leveraging fundamental Data Structures.",
+    },
+    outcome: {
+      th: "โปรเจกต์ชั้นปีที่ 1 เทอม 2 นำแนวคิด Data Structures ขั้นสูง (Queue สำหรับคลังตัวเลข FIFO และ Recursion สำหรับวิถีอุกกาบาต) มาประยุกต์ใช้ในเกมจริงได้อย่างมีประสิทธิภาพ",
+      en: "1st-year project (Term 2): Successfully applied advanced data structures (FIFO Queue pipelines & Recursion) into an interactive HTML5 game engine.",
     },
     problem: {
       th: "เกมปริศนาคณิตศาสตร์ 24 แบบดั้งเดิมมักขาดความน่าสนใจและการโต้ตอบที่สนุกสนานสำหรับผู้เล่นรุ่นใหม่",
@@ -197,31 +277,10 @@ export const projectsList = [
     },
     tech: ["JavaScript", "HTML5 Canvas", "Data Structures", "CSS3"],
     github: "",
-    demo: "",
+    demo: "https://woradech-dev.github.io/SpaceGameProject/home",
+    demoLabel: {
+      th: "ทดลองเล่นเกม (Live Game Demo)",
+      en: "Play Live Game Demo",
+    },
   },
-
-  {
-    id: "ref-fashion",
-    category: "fullstack",
-    thumbnail: "./projects/ref-fashion.png",
-    title: {
-      th: "REF: แอปพลิเคชันแนะนำสไตล์การแต่งกายและจับคู่เสื้อผ้าตามสถานการณ์",
-      en: "REF: Fashion Styling Recommendation & Outfit Coordination Platform",
-    },
-    tagline: {
-      th: "แอปพลิเคชันคอมมูนิตี้แฟชั่น แนะนำการแต่งกายให้เข้ากับโอกาสและสถานที่ พร้อมระบบเชื่อมต่อร้านค้าออนไลน์",
-      en: "Fashion styling and wardrobe coordination platform with situational outfit suggestions and integrated shopping links.",
-    },
-    problem: {
-      th: "กลุ่มวัยรุ่นและคนรุ่นใหม่มักประสบปัญหาเลือกเครื่องแต่งกายไม่ถูกเมื่อต้องออกไปในที่สาธารณะ ขาดไอเดียหรือ Reference ในการแต่งตัว ชุดที่แต่งซ้ำๆ ไม่หลากหลาย และไม่ทราบแหล่งซื้อสินค้าเครื่องแต่งกายที่เข้ากับสไตล์ตนเองในงบประมาณที่จำกัด",
-      en: "Young adults frequently face decision fatigue and lack styling references when dressing for different social occasions, resulting in repetitive outfits and difficulty discovering affordable apparel.",
-    },
-    solution: {
-      th: "ออกแบบและพัฒนาต้นแบบ Web/App ด้วยหลักการ Design Thinking และ Responsive Prototype โดยมีฟีเจอร์จัดเก็บตู้เสื้อผ้าของผู้ใช้ (User's Collection), ระบบแนะนำชุดที่เข้ากับเสื้อผ้าที่มีอยู่เดิม, ฟังก์ชันแนะนำการแต่งกายตามโอกาสและสถานที่ (Every Situation), ระบบ Wishlist, และการเชื่อมต่อลิงก์ไปยังหน้าร้านค้าออนไลน์ได้ทันที",
-      en: "Engineered a responsive application prototype featuring personal wardrobe collection management, situational outfit curation algorithms, mix-and-match styling suggestions, and direct retailer checkout links.",
-    },
-    tech: ["JavaScript", "HTML5", "CSS3", "Figma", "Design Thinking", "Responsive Web"],
-    github: "",
-    demo: "",
-  }
 ];
