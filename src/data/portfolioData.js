@@ -61,7 +61,7 @@ export const portfolioData = {
     },
     projectsSection: {
       tag: "ผลงานและโปรเจกต์",
-      title: "ผลงานที่สร้างสรรค์ (Projects Showcase)",
+      title: "ผลงานที่สร้างสรรค์",
       subtitle: "ผลงานซอฟต์แวร์จริงที่ออกแบบและพัฒนาขึ้น เพื่อแก้ปัญหาและเพิ่มประสิทธิภาพการทำงาน",
       filterAll: "ทั้งหมด",
       filterFullstack: "Full-Stack",

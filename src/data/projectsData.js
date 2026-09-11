@@ -86,6 +86,11 @@ export const projectsList = [
       th: "เพิ่มเพื่อน LINE Bot (ทดลองใช้จริง)",
       en: "Try Live LINE Bot",
     },
+    pdfLink: "./documents/slipscan-presentation.pdf",
+    pdfLabel: {
+      th: "ดูสไลด์นำเสนอ (PDF 13 หน้า)",
+      en: "View Slide Presentation (PDF 13 Pages)",
+    },
   },
 
   {
