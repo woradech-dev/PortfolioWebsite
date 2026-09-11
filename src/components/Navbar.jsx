@@ -19,12 +19,18 @@ export default function Navbar({ lang, setLang, theme, toggleTheme, data, person
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         
         {/* Logo */}
-        <a href="#top" className="flex items-center gap-2 group">
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-cyan-500 to-indigo-600 flex items-center justify-center text-white font-mono font-bold shadow-md shadow-cyan-500/20 group-hover:scale-105 transition-transform">
-            D
+        <a href="#top" className="flex items-center gap-2.5 group">
+          <div className="relative w-9 h-9 rounded-xl p-[2px] bg-gradient-to-br from-cyan-500 via-indigo-500 to-pink-500 shadow-md shadow-cyan-500/20 group-hover:shadow-cyan-500/40 group-hover:scale-105 transition-all duration-300">
+            <div className="w-full h-full rounded-[10px] bg-white dark:bg-slate-900 overflow-hidden flex items-center justify-center">
+              <img
+                src="./favicon.png"
+                alt="Woradech Mascot"
+                className="w-full h-full object-cover p-0.5 group-hover:scale-110 transition-transform duration-300"
+              />
+            </div>
           </div>
           <div className="flex flex-col">
-            <span className="font-bold text-slate-900 dark:text-white tracking-tight leading-none text-base sm:text-lg">
+            <span className="font-bold text-slate-900 dark:text-white tracking-tight leading-none text-base sm:text-lg group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">
               Woradech A. <span className="text-cyan-500 text-sm font-normal">({personal.nickname})</span>
             </span>
             <span className="text-[11px] text-slate-500 dark:text-slate-400 font-mono tracking-wider uppercase">
