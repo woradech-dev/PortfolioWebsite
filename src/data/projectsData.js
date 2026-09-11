@@ -83,7 +83,7 @@ export const projectsList = [
     github: "",
     demo: "https://lin.ee/5YQCjLH",
     demoLabel: {
-      th: "เพิ่มเพื่อน LINE Bot (ทดลองใช้จริง)",
+      th: "ทดลองใช้งานจริง (LINE Bot)",
       en: "Try Live LINE Bot",
     },
     pdfLink: "./documents/slipscan-presentation.pdf",
@@ -126,8 +126,8 @@ export const projectsList = [
     github: "",
     demo: "https://phathai.pages.dev/",
     demoLabel: {
-      th: "Web Demo (Cloudflare Pages)",
-      en: "Web Demo (Cloudflare Pages)",
+      th: "ทดลองคลิกเล่น (เฉพาะ Frontend)",
+      en: "Interactive Demo (Frontend UI Only)",
     },
     slideLink: "https://canva.link/gayzmz6xupe283r",
     slideLabel: {
@@ -169,8 +169,8 @@ export const projectsList = [
     github: "",
     demo: "https://thamsod.pages.dev/",
     demoLabel: {
-      th: "ทดลองใช้งาน (Live Demo)",
-      en: "Launch Live Demo",
+      th: "ทดลองใช้งานจริง (Live Demo)",
+      en: "Try Live Platform Demo",
     },
     slideLink: "https://canva.link/t752z7d3mtqvueo",
     slideLabel: {
@@ -246,13 +246,13 @@ export const projectsList = [
     github: "",
     demo: "https://woradech-dev.github.io/_SlideMe/",
     demoLabel: {
-      th: "Demo ฝั่งลูกค้า (Customer App)",
-      en: "Customer App Demo",
+      th: "ทดลองคลิกเล่น (Frontend ฝั่งลูกค้า)",
+      en: "Customer App (Frontend UI Only)",
     },
     extraLink: "https://woradech-dev.github.io/_SlideMeDriver/",
     extraLinkLabel: {
-      th: "Demo ฝั่งคนขับ (Driver App)",
-      en: "Driver App Demo",
+      th: "ทดลองคลิกเล่น (Frontend ฝั่งคนขับ)",
+      en: "Driver App (Frontend UI Only)",
     },
     slideLink: "https://canva.link/y7bmot03qfmy89b",
     slideLabel: {
@@ -294,8 +294,8 @@ export const projectsList = [
     github: "",
     demo: "https://woradech-dev.github.io/SpaceGameProject/home",
     demoLabel: {
-      th: "ทดลองเล่นเกม (Live Game Demo)",
-      en: "Play Live Game Demo",
+      th: "ทดลองเล่นเกมจริง (Play Game)",
+      en: "Play Live Game",
     },
     slideLink: "https://canva.link/kvgam2zsdww8sp3",
     slideLabel: {

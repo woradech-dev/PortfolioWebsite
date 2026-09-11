@@ -30,7 +30,7 @@ export const portfolioData = {
     },
     skills: {
       tag: "ทักษะทางเทคนิค",
-      title: "ความเชี่ยวชาญและเทคโนโลยี (Skills & Expertise)",
+      title: "ความเชี่ยวชาญและเทคโนโลยี",
       subtitle: "ผสมผสานความรู้ทั้งด้านหน้าบ้าน หลังบ้าน การจัดการฐานข้อมูล และระบบอัตโนมัติ",
       categories: [
         {
@@ -68,49 +68,49 @@ export const portfolioData = {
       filterAutomation: "Automation & Bots",
       filterAi: "Data Science & AI",
       filterOther: "อื่นๆ",
-      featuredBadge: "⭐ ผลงานเรือธง (Featured Project)",
+      featuredBadge: "⭐ ผลงานเด่น",
       featuredSubtitle: "ระบบที่ผ่านการ Deploy ใช้งานจริง และเชื่อมโยงหลายเทคโนโลยีเข้าด้วยกัน",
-      roleLabel: "บทบาทหน้าที่ (Your Role):",
-      outcomeLabel: "ผลลัพธ์ / สิ่งที่ได้เรียนรู้ (Outcome):",
-      problemLabel: "โจทย์ปัญหา (Problem):",
-      solutionLabel: "โซลูชัน (Solution):",
+      roleLabel: "บทบาทหน้าที่:",
+      outcomeLabel: "ผลลัพธ์และสิ่งที่ได้เรียนรู้:",
+      problemLabel: "โจทย์ปัญหา:",
+      solutionLabel: "โซลูชัน:",
       techLabel: "Tech Stack:",
       repoButton: "ดูโค้ดบน GitHub",
-      demoButton: "ทดลองใช้งาน (Live Demo)",
-      privateProjectBadge: "🔒 โปรเจกต์สำหรับการศึกษา / Private",
+      demoButton: "ทดลองใช้งาน",
+      privateProjectBadge: "🔒 โปรเจกต์สำหรับการศึกษา",
     },
     about: {
       tag: "เกี่ยวกับผม & ปรัชญา",
-      title: "ความมุ่งมั่นและเป้าหมาย (About & Philosophy)",
+      title: "ความมุ่งมั่นและเป้าหมาย",
       quote: "If you're tired, just take a break. Because just 'take a break' doesn't mean you 'giving up' on it, once you're healed you can always keep moving forward.",
       quoteAuthor: "Woradech Ardvichai (Drop)",
       quoteNote: "คติประจำใจที่ช่วยให้ผมไม่หยุดพัฒนา และพร้อมเผชิญหน้ากับความท้าทายใหม่ๆ ทางเทคโนโลยีเสมอ",
-      targetRolesTitle: "เป้าหมายสายงาน (Target Career Roles)",
+      targetRolesTitle: "เป้าหมายสายงาน",
       targetRoles: [
         "Full-Stack Developer",
         "Backend Developer",
         "AI & Automation Engineer"
       ],
-      strengthsTitle: "จุดแข็งหลัก 3 ประการ (Core Strengths)",
+      strengthsTitle: "จุดแข็งหลัก 3 ประการ",
       strengths: [
         {
           num: "01",
-          title: "Fast Learner (เรียนรู้ได้รวดเร็ว)",
+          title: "การเรียนรู้ที่รวดเร็ว",
           desc: "เปิดรับและทำความเข้าใจเครื่องมือหรือภาษาใหม่ๆ ได้ไว พิสูจน์ด้วยผลการเรียน GPA 3.88 และการสร้างผลงานข้ามสายเทคโนโลยี"
         },
         {
           num: "02",
-          title: "Crisis & Ad-hoc Problem Solving (แก้ปัญหาเฉพาะหน้า)",
+          title: "การแก้ปัญหาเฉพาะหน้า",
           desc: "มีทักษะการรับมือกับสถานการณ์ไม่คาดคิด โดยเฉพาะระบบงานอีเวนต์สดและงานระบบ Production ที่ต้องการความแม่นยำสูง"
         },
         {
           num: "03",
-          title: "Systematic Thinking (คิดอย่างเป็นระบบ)",
+          title: "การคิดอย่างเป็นระบบ",
           desc: "ถนัดการมองภาพรวมสถาปัตยกรรม ออกแบบ Data Flow และวางระบบ Automation เพื่อลดงานซ้ำซ้อนอย่างมีแบบแผน"
         }
       ],
-      educationTitle: "ประวัติการศึกษา (Education)",
-      university: "มหาวิทยาลัยศรีปทุม (Sripatum University)",
+      educationTitle: "ประวัติการศึกษา",
+      university: "มหาวิทยาลัยศรีปทุม",
       faculty: "คณะเทคโนโลยีสารสนเทศ",
       major: "สาขาวิทยาการคอมพิวเตอร์และนวัตกรรมการพัฒนาซอฟต์แวร์",
       degree: "กำลังศึกษาระดับปริญญาตรี (ชั้นปีที่ 3)",
@@ -126,8 +126,8 @@ export const portfolioData = {
     },
     contact: {
       tag: "ช่องทางติดต่อ",
-      title: "พร้อมร่วมงานและพูดคุย (Get in Touch)",
-      subtitle: "เปิดรับโอกาสสำหรับตำแหน่ง ฝึกงาน (Internship) และ Junior Software Engineer / Backend / Full-Stack",
+      title: "พร้อมร่วมงานและพูดคุย",
+      subtitle: "เปิดรับโอกาสสำหรับตำแหน่งฝึกงานสหกิจศึกษา และ Junior Software Engineer / Backend / Full-Stack",
       emailCardTitle: "อีเมลสำหรับติดต่อ",
       copyEmail: "คัดลอกอีเมล",
       copied: "คัดลอกแล้ว!",
